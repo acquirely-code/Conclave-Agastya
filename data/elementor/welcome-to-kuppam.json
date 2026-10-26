@@ -1,0 +1,59 @@
+{
+ "id": 571,
+ "title": "Welcome to Kuppam",
+ "slug": "welcome-to-kuppam",
+ "elements": [
+  {
+   "id": "29c53365",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "4213df79",
+     "elType": "widget",
+     "settings": {
+      "editor": "<!-- wp:shortcode -->\n<p>[conclave_thankyou_reserved]</p>\n<!-- /wp:shortcode -->",
+      "_margin": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "_padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "_element_width": "inherit"
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    }
+   ],
+   "isInner": false
+  }
+ ]
+}

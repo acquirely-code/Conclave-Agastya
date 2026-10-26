@@ -1,0 +1,21 @@
+{
+  "name": "agastya-conclave",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Education Leaders Conclave 2026 site (conclave.agastya.org), rebuilt from WordPress/Elementor in Next.js",
+  "engines": {
+    "node": ">=18.18"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npx serve@14.2.4 out",
+    "import:wordpress": "node scripts/import-wordpress.js"
+  },
+  "dependencies": {
+    "next": "15.5.28",
+    "react": "19.2.9",
+    "react-dom": "19.2.9",
+    "swiper": "8.4.7"
+  }
+}

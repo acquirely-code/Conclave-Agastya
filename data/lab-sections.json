@@ -1,0 +1,35 @@
+{
+ "pb_title": "21-50 (Early Bird Extended)",
+ "pb_claimed": 35,
+ "pb_total": 100,
+ "pb_percent": "",
+ "pb_left": "0",
+ "pb_right": "{claimed} / {total} Claimed",
+ "pb_note": "",
+ "st_eyebrow": "The AI Experience Lab",
+ "st_heading": "Five stations. You work every one.",
+ "st_sub": "You sit down at each station and use the tools your teachers are already quietly using — and find out exactly where they help, and exactly where they fail.",
+ "st_footer": "You leave the Lab with a first-hand map of what it can carry in your school, and what it cannot.",
+ "stations": [
+  {
+   "title": "Lesson redesign",
+   "desc": "Rebuild one of your own lessons with AI in the room."
+  },
+  {
+   "title": "Differentiation",
+   "desc": "One class, thirty levels. Make it work."
+  },
+  {
+   "title": "Feedback at scale",
+   "desc": "What happens to marking when the machine does it."
+  },
+  {
+   "title": "Parent communication",
+   "desc": "The messages your school sends, rewritten."
+  },
+  {
+   "title": "Where AI fails",
+   "desc": "The station that matters most. Watch it break."
+  }
+ ]
+}

@@ -1,0 +1,780 @@
+{
+ "id": 29,
+ "title": "Elementor Footer #29",
+ "slug": "elementor-footer-29",
+ "elements": [
+  {
+   "id": "ef574e8",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1440,
+     "sizes": []
+    },
+    "flex_align_items": "center",
+    "background_background": "classic",
+    "background_image": {
+     "url": "/wp-content/uploads/2026/07/d859ee2bb87d14263e83dc3402473b8f21b046d2-scaled.jpg",
+     "id": 34,
+     "size": "",
+     "alt": "",
+     "source": "library"
+    },
+    "background_position": "center center",
+    "background_attachment": "scroll",
+    "background_repeat": "no-repeat",
+    "background_size": "cover",
+    "background_overlay_background": "classic",
+    "background_overlay_color": "#005E8352",
+    "background_overlay_opacity": {
+     "unit": "px",
+     "size": 1,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "20",
+     "right": "50",
+     "bottom": "20",
+     "left": "50",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "25",
+     "right": "0",
+     "bottom": "25",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "2003493",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "width": {
+       "unit": "%",
+       "size": 85,
+       "sizes": []
+      },
+      "min_height": {
+       "unit": "px",
+       "size": 500,
+       "sizes": []
+      },
+      "flex_justify_content": "center",
+      "min_height_mobile": {
+       "unit": "px",
+       "size": 350,
+       "sizes": []
+      },
+      "flex_gap_mobile": {
+       "column": "10",
+       "row": "10",
+       "isLinked": true,
+       "unit": "px",
+       "size": 10
+      },
+      "min_height_tablet": {
+       "unit": "px",
+       "size": 350,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "8a9e5cf",
+       "elType": "widget",
+       "settings": {
+        "title": "Agastya Creativity Campus, Kuppam",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_font_weight": "800",
+        "typography_text_transform": "uppercase",
+        "typography_line_height": {
+         "unit": "px",
+         "size": 45,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 1.5,
+         "sizes": []
+        },
+        "title_color": "#FFFFFF",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_line_height_mobile": {
+         "unit": "em",
+         "size": 1.6,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "19e92b7",
+       "elType": "widget",
+       "settings": {
+        "title": "In five years, Al will run much of what your school does today. These three days are about what it won't be able to do and how you build more of it.",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 40,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_line_height": {
+         "unit": "px",
+         "size": 45,
+         "sizes": []
+        },
+        "title_color": "#FFFFFF",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_line_height_mobile": {
+         "unit": "em",
+         "size": 1.4,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 30,
+         "sizes": []
+        },
+        "typography_line_height_tablet": {
+         "unit": "em",
+         "size": 1.4,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "a48dd3f",
+       "elType": "widget",
+       "settings": {
+        "text": "Reserve My Seat",
+        "link": {
+         "url": "https://rzp.io/rzp/ELC2026",
+         "is_external": "",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "32",
+         "right": "32",
+         "bottom": "32",
+         "left": "32",
+         "isLinked": "1"
+        },
+        "__globals__": {
+         "typography_typography": ""
+        },
+        "__dynamic__": [],
+        "hover_color": "#FFFFFF",
+        "border_color": "#FF7D32",
+        "border_width": {
+         "unit": "px",
+         "top": "7",
+         "right": "7",
+         "bottom": "7",
+         "left": "7",
+         "isLinked": "1"
+        },
+        "icon_indent": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "_padding": {
+         "unit": "%",
+         "top": "",
+         "right": "",
+         "bottom": "",
+         "left": "",
+         "isLinked": true
+        },
+        "_padding_tablet": {
+         "unit": "%",
+         "top": "",
+         "right": "",
+         "bottom": "",
+         "left": "",
+         "isLinked": "1"
+        },
+        "_padding_mobile": {
+         "unit": "%",
+         "top": "",
+         "right": "",
+         "bottom": "",
+         "left": "",
+         "isLinked": "1"
+        },
+        "align": "center",
+        "size": "md",
+        "text_padding_mobile": {
+         "unit": "px",
+         "top": "10",
+         "right": "18",
+         "bottom": "10",
+         "left": "18",
+         "isLinked": false
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        },
+        "typography_font_weight": "600",
+        "button_text_color": "#FFFFFF",
+        "background_color": "#F66E1F",
+        "button_background_hover_color": "#F66E1F",
+        "button_hover_border_color": "#F66E1F",
+        "hide_tablet": "hidden-tablet",
+        "hide_mobile": "hidden-mobile",
+        "selected_icon": {
+         "value": {
+          "url": "/wp-content/uploads/2026/07/Arrow-2.svg",
+          "id": 19
+         },
+         "library": "svg"
+        },
+        "icon_align": "row-reverse",
+        "border_border": "solid",
+        "text_padding": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": true
+        }
+       },
+       "elements": [],
+       "widgetType": "button"
+      },
+      {
+       "id": "05bc0b5",
+       "elType": "widget",
+       "settings": {
+        "view": "inline",
+        "icon_list": [
+         {
+          "text": "100 seats. Then it's a waitlist.",
+          "selected_icon": {
+           "value": {
+            "url": "/wp-content/uploads/2026/07/Vector.svg",
+            "id": 35
+           },
+           "library": "svg"
+          },
+          "_id": "ba83cec"
+         }
+        ],
+        "icon_align": "center",
+        "icon_typography_typography": "custom",
+        "icon_typography_font_family": "Lato",
+        "icon_typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "icon_typography_font_weight": "400",
+        "icon_typography_text_transform": "uppercase",
+        "text_color": "#FF7D32",
+        "icon_typography_font_size_mobile": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "icon_typography_font_size_tablet": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "icon_size": {
+         "unit": "px",
+         "size": 25,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-list"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "591c71d",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1440,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#005E83"
+   },
+   "elements": [
+    {
+     "id": "591869a",
+     "elType": "container",
+     "settings": {
+      "content_width": "full"
+     },
+     "elements": [
+      {
+       "id": "cd262f0",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "row",
+        "padding_mobile": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "2b56e42",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "padding_mobile": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "a966283",
+           "elType": "widget",
+           "settings": {
+            "title": "Organised by & at",
+            "header_size": "h3",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Lato",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "title_color": "#FFFFFF",
+            "align_mobile": "center"
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "71fbebc",
+           "elType": "widget",
+           "settings": {
+            "image": {
+             "url": "/wp-content/uploads/2026/07/Untitled-design-15-e1786543816928.png",
+             "id": 780,
+             "size": "",
+             "alt": "",
+             "source": "library"
+            },
+            "image_size": "full",
+            "width": {
+             "unit": "%",
+             "size": 88,
+             "sizes": []
+            },
+            "align_tablet": "start",
+            "width_tablet": {
+             "unit": "%",
+             "size": 86,
+             "sizes": []
+            },
+            "align": "start",
+            "_element_width": "inherit",
+            "_element_custom_width": {
+             "unit": "%",
+             "size": 42
+            },
+            "_flex_align_self": "center",
+            "_flex_size": "none",
+            "width_mobile": {
+             "unit": "%",
+             "size": 100,
+             "sizes": []
+            },
+            "_element_custom_width_mobile": {
+             "unit": "px",
+             "size": 144,
+             "sizes": []
+            },
+            "_flex_align_self_mobile": "flex-start",
+            "align_mobile": "center",
+            "link_to": "custom",
+            "__dynamic__": {
+             "link": "[elementor-tag id=\"c58b3fd\" name=\"site-url\" settings=\"%7B%7D\"]"
+            }
+           },
+           "elements": [],
+           "widgetType": "image"
+          },
+          {
+           "id": "f1be424",
+           "elType": "widget",
+           "settings": {
+            "editor": "<p>Agastya International Foundation. Sparking curiosity in children since 1999. Agastya Creativity Campus, Kuppam, Andhra Pradesh.</p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Lato",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "text_color": "#FFFFFF",
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "typography_text_transform": "capitalize",
+            "typography_letter_spacing": {
+             "unit": "px",
+             "size": 1.6,
+             "sizes": []
+            },
+            "_element_width": "initial",
+            "_element_custom_width": {
+             "unit": "%",
+             "size": 100,
+             "sizes": []
+            },
+            "_element_custom_width_mobile": {
+             "unit": "px",
+             "size": 1000,
+             "sizes": []
+            },
+            "_element_custom_width_tablet": {
+             "unit": "%",
+             "size": 100,
+             "sizes": []
+            },
+            "_margin": {
+             "unit": "px",
+             "top": "-10",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": false
+            },
+            "_padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": false
+            },
+            "align_mobile": "center"
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "b2872f6",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_gap_mobile": {
+           "column": "0",
+           "row": "10",
+           "isLinked": false,
+           "unit": "px",
+           "size": 0
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "flex_justify_content_mobile": "center",
+          "flex_align_items_mobile": "center",
+          "_flex_align_self_mobile": "center"
+         },
+         "elements": [
+          {
+           "id": "4a8c9b5",
+           "elType": "widget",
+           "settings": {
+            "title": "Booking Partner",
+            "header_size": "h3",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Lato",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "title_color": "#FFFFFF",
+            "align_mobile": "center"
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "e66ba7a",
+           "elType": "widget",
+           "settings": {
+            "image": {
+             "url": "/wp-content/uploads/2026/07/Navam.png",
+             "id": 879,
+             "size": "",
+             "alt": "",
+             "source": "library"
+            },
+            "image_size": "full",
+            "width": {
+             "unit": "%",
+             "size": 47,
+             "sizes": []
+            },
+            "align_tablet": "start",
+            "width_tablet": {
+             "unit": "%",
+             "size": 100,
+             "sizes": []
+            },
+            "_element_width_mobile": "initial",
+            "_element_custom_width_mobile": {
+             "unit": "px",
+             "size": 136
+            },
+            "_flex_align_self": "center",
+            "_flex_size": "none",
+            "_element_width": "inherit",
+            "_element_custom_width": {
+             "unit": "%",
+             "size": 20,
+             "sizes": []
+            },
+            "width_mobile": {
+             "unit": "%",
+             "size": 100,
+             "sizes": []
+            },
+            "_element_custom_width_tablet": {
+             "unit": "px",
+             "size": 121,
+             "sizes": []
+            },
+            "_flex_align_self_mobile": "center",
+            "align_mobile": "center"
+           },
+           "elements": [],
+           "widgetType": "image"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "1574648",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_gap_mobile": {
+           "column": "0",
+           "row": "10",
+           "isLinked": false,
+           "unit": "px",
+           "size": 0
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "550a112",
+           "elType": "widget",
+           "settings": {
+            "title": "Growth & Outreach Partner",
+            "header_size": "h3",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Lato",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "title_color": "#FFFFFF",
+            "align_mobile": "center"
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "92d2e9f",
+           "elType": "widget",
+           "settings": {
+            "image": {
+             "url": "/wp-content/uploads/2026/07/admin-ajax-1-e1786710290925.png",
+             "id": 840,
+             "size": "",
+             "alt": "",
+             "source": "library"
+            },
+            "image_size": "full",
+            "width": {
+             "unit": "%",
+             "size": 46,
+             "sizes": []
+            },
+            "align_tablet": "end",
+            "width_tablet": {
+             "unit": "%",
+             "size": 86,
+             "sizes": []
+            },
+            "_element_width_mobile": "initial",
+            "_element_custom_width_mobile": {
+             "unit": "px",
+             "size": 136
+            },
+            "_flex_align_self": "center",
+            "_flex_size": "none",
+            "_element_width": "inherit",
+            "_element_custom_width": {
+             "unit": "%",
+             "size": 30,
+             "sizes": []
+            },
+            "width_mobile": {
+             "unit": "%",
+             "size": 100,
+             "sizes": []
+            },
+            "_flex_align_self_mobile": "center",
+            "_padding": {
+             "unit": "px",
+             "top": "20",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": false
+            },
+            "align": "center"
+           },
+           "elements": [],
+           "widgetType": "image"
+          }
+         ],
+         "isInner": true
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "43f597d",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "border_color": "#FFFFFF"
+       },
+       "elements": [
+        {
+         "id": "6b13b6f",
+         "elType": "widget",
+         "settings": {
+          "editor": "<p>© 2026 Agastya International Foundation</p>",
+          "align": "center",
+          "typography_typography": "custom",
+          "typography_font_family": "Lato",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_font_weight": "500",
+          "text_color": "#FFFFFF",
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "text-editor"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  }
+ ]
+}

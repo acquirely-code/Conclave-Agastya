@@ -1,0 +1,361 @@
+/* =========================================================================
+   Lab Sections — [lab_progress] + [lab_stations]
+   Type: Lato / Orange #FF7D32 / Deep blue #005E83
+   ====================================================================== */
+
+.labsec-progress,
+.labsec-stations {
+	font-family: 'Lato', sans-serif;
+	background: #ffffff;
+	box-sizing: border-box;
+}
+
+.labsec-progress *,
+.labsec-stations * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* -------------------------------------------------------------------------
+   Progress bar (Frame 71)
+   ---------------------------------------------------------------------- */
+
+.labsec-progress {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 70px;
+	gap: 20px;
+	width: 100%;
+}
+
+.labsec-progress__title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 107%;
+	text-align: center;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.labsec-progress__wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 13px;
+	width: 100%;
+	max-width: 1300px;
+}
+
+.labsec-progress__track {
+	width: 100%;
+	height: 24px;
+	background: #d9d9d9;
+	border-radius: 320px;
+	overflow: hidden;
+}
+
+.labsec-progress__fill {
+	width: 0%;
+	height: 24px;
+	background: #ff7d32;
+	border-radius: 320px;
+	transition: width 1.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.labsec-progress.is-filled .labsec-progress__fill {
+	width: var(--labsec-target, 0%);
+}
+
+.labsec-progress__labels {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.labsec-progress__zero {
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 107%;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	color: #777777;
+}
+
+.labsec-progress__claimed {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 107%;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	color: #777777;
+}
+
+.labsec-progress__note {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 120%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ff7d32;
+}
+
+/* -------------------------------------------------------------------------
+   Stations (Frame 58)
+   ---------------------------------------------------------------------- */
+
+.labsec-stations {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 20px;
+	gap: 35px;
+	width: 100%;
+}
+
+.labsec-stations__head {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	width: 100%;
+	max-width: 1120px;
+	text-align: center;
+}
+
+.labsec-stations__eyebrow {
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 120%;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	color: #ff7d32;
+}
+
+.labsec-stations__heading {
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 107%;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	color: #000000;
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+.labsec-stations__sub {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 120%;
+	color: #707070;
+	max-width: 843px;
+	margin: 0 auto;
+}
+
+/* --- Serpentine map ---------------------------------------------------- */
+
+.labsec-stations__map {
+	position: relative;
+	width: 100%;
+	max-width: 1100px;
+	aspect-ratio: 1100 / 640;
+	margin-top: 20px;
+}
+
+.labsec-stations__svg {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.labsec-stations__path {
+	stroke-dasharray: 1;
+	stroke-dashoffset: 1;
+	will-change: stroke-dashoffset;
+}
+
+/* Station block: centred on its point on the line */
+.labsec-station {
+	position: absolute;
+	left: var(--labsec-x);
+	top: var(--labsec-y);
+	transform: translate(-50%, -34px); /* number card centre sits on the line */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	width: 242px;
+	opacity: 0;
+	transition: opacity 0.5s ease, translate 0.5s ease;
+	translate: 0 14px;
+}
+
+.labsec-station.is-visible {
+	opacity: 1;
+	translate: 0 0;
+}
+
+.labsec-station__num {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 12px;
+	width: 68px;
+	height: 68px;
+	background: #ffffff;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+	border-radius: 12px;
+}
+
+.labsec-station__num span {
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 107%;
+	text-align: center;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	color: #005e83;
+}
+
+.labsec-station__text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+	width: 100%;
+}
+
+.labsec-station__title {
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 107%;
+	text-align: center;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	color: #ff7d32;
+}
+
+.labsec-station__desc {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 120%;
+	text-align: center;
+	color: #474747;
+	max-width: 224px;
+}
+
+/* --- Footer ------------------------------------------------------------ */
+
+.labsec-stations__footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 12px;
+	width: 100%;
+	max-width: 861px;
+}
+
+.labsec-stations__door {
+	flex: none;
+}
+
+.labsec-stations__footer p {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 120%;
+	color: #ff7d32;
+}
+
+/* -------------------------------------------------------------------------
+   Responsive — stack stations vertically under 900px
+   ---------------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+	/* Header — mobile Frame 58 spec */
+	.labsec-stations { padding: 25px 20px; gap: 25px; }
+	.labsec-stations__head { gap: 8px; max-width: 400px; }
+	.labsec-stations__eyebrow { font-size: 16px; font-weight: 800; }
+	.labsec-stations__heading { font-size: 22px; max-width: 400px; }
+	.labsec-stations__sub { font-size: 14px; font-weight: 500; max-width: 372px; }
+
+	/* Stations — centered vertical stack, no connecting line */
+	.labsec-stations__map {
+		aspect-ratio: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 28px;
+		width: auto;
+		max-width: 400px;
+		margin: 0 auto;
+	}
+
+	.labsec-stations__svg { display: none; }
+
+	.labsec-station {
+		position: static;
+		transform: none;
+		width: 135px;
+		align-items: center;
+		gap: 6px;
+		opacity: 1;
+		translate: 0 0;
+	}
+
+	.labsec-station__num {
+		width: 26px;
+		height: 26px;
+		padding: 3px;
+		border-radius: 4.32px;
+		box-shadow: 0px 0px 2.16px rgba(0, 0, 0, 0.25);
+	}
+
+	.labsec-station__num span { font-size: 13.68px; }
+
+	.labsec-station__text { gap: 4px; }
+
+	.labsec-station__title { font-size: 14px; }
+
+	.labsec-station__desc {
+		font-size: 8px;
+		font-weight: 500;
+		max-width: 132px;
+	}
+
+	/* Footer — 14x25 door, 12px line */
+	.labsec-stations__footer {
+		max-width: 286px;
+		gap: 6px;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	.labsec-stations__door { width: 14px; height: 25px; }
+
+	.labsec-stations__footer p {
+		font-size: 12px;
+		font-weight: 500;
+	}
+
+	.labsec-progress { padding: 30px 20px; }
+	.labsec-progress__zero,
+	.labsec-progress__claimed { font-size: 16px; }
+	.labsec-progress__note { font-size: 14px; }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+	.labsec-progress__fill { transition: none; }
+	.labsec-station { transition: none; opacity: 1; translate: 0 0; }
+	.labsec-stations__path { stroke-dashoffset: 0 !important; }
+}

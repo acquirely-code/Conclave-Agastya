@@ -1,0 +1,19 @@
+/* Hide it only on mobile */
+@media (max-width: 767px) {
+    .conclave-typ__contact-row {
+        display: none !important;
+    }
+}
+
+/* Keep the space reserved but make it invisible/unclickable */
+.conclave-typ__contact-row {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.conclave-typ__soft {
+    display: none !important;
+}.conclave-typ__soft {
+    display: none !important;
+}
+

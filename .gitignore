@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+next-env.d.ts
+
+# Vercel
+.vercel/
+
+# local env files
+.env*
+
+# logs and OS files
+*.log
+.DS_Store
+Thumbs.db
+
+# WordPress backups (never commit: contains credentials and personal data)
+*.sql
+*.sql.gz
+*.tar.gz

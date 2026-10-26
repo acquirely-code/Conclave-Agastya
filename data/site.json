@@ -1,0 +1,46 @@
+{
+ "name": "Agastya",
+ "url": "https://conclave.agastya.org",
+ "logo": {
+  "url": "/wp-content/uploads/2026/07/Mask-group.png",
+  "width": 600,
+  "height": 208
+ },
+ "icons": {
+  "32": "/wp-content/uploads/2026/07/Mask-group.png",
+  "180": "/wp-content/uploads/2026/07/Mask-group.png",
+  "192": "/wp-content/uploads/2026/07/Mask-group.png",
+  "270": "/wp-content/uploads/2026/07/Mask-group.png"
+ },
+ "menu": [
+  {
+   "title": "About",
+   "url": "#about"
+  },
+  {
+   "title": "Why Kuppam",
+   "url": "#Why-Kuppam"
+  },
+  {
+   "title": "AI Experience Lab",
+   "url": "#AI-Experience-Lab"
+  },
+  {
+   "title": "3-Day Journey",
+   "url": "#3-Day-Journey"
+  },
+  {
+   "title": "Speakers",
+   "url": "#Speakers"
+  },
+  {
+   "title": "Outcomes",
+   "url": "#Outcomes"
+  },
+  {
+   "title": "FAQ",
+   "url": "#FAQ"
+  }
+ ],
+ "metaPixelId": "476740001367750"
+}

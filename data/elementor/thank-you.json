@@ -1,0 +1,35 @@
+{
+ "id": 572,
+ "title": "Thank you",
+ "slug": "thank-you",
+ "elements": [
+  {
+   "id": "bf0ccce",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "3e48ad4",
+     "elType": "widget",
+     "settings": {
+      "shortcode": "[conclave_thankyou_callback]",
+      "_element_width": "inherit"
+     },
+     "elements": [],
+     "widgetType": "shortcode"
+    }
+   ],
+   "isInner": false
+  }
+ ]
+}

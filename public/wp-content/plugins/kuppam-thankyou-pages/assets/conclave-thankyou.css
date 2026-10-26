@@ -1,0 +1,480 @@
+/* =========================================================
+   Principal Conclave 2026 — Thank You Pages
+   Orange + white theme, Lato
+   ========================================================= */
+
+.conclave-typ {
+	--c-orange: rgb(246, 110, 31);
+	--c-orange-soft: rgba(246, 110, 31, 0.10);
+	--c-orange-mid: rgba(246, 110, 31, 0.18);
+	--c-ink: #1c1a17;
+	--c-muted: #6b6560;
+	--c-line: #efe9e3;
+	--c-white: #ffffff;
+
+	position: relative;
+	font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	color: var(--c-ink);
+	display: flex;
+	justify-content: center;
+	padding: 48px 20px 64px;
+	overflow: hidden;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+.conclave-typ *,
+.conclave-typ *::before,
+.conclave-typ *::after {
+	box-sizing: border-box;
+}
+
+/* Soft ambient glow behind the card */
+.conclave-typ__aura {
+	position: absolute;
+	top: -140px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 620px;
+	height: 620px;
+	background: radial-gradient(circle, var(--c-orange-mid) 0%, rgba(246,110,31,0) 68%);
+	filter: blur(10px);
+	z-index: 0;
+	pointer-events: none;
+}
+
+/* ---------------- Card ---------------- */
+.conclave-typ__card {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	max-width: 1440px;
+	background: var(--c-white);
+	border: 1px solid var(--c-line);
+	border-radius: 26px;
+	padding: 54px 52px 46px;
+	box-shadow:
+		0 1px 2px rgba(28, 26, 23, 0.04),
+		0 24px 60px -20px rgba(246, 110, 31, 0.22),
+		0 40px 90px -40px rgba(28, 26, 23, 0.18);
+	text-align: center;
+	animation: conclave-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes conclave-rise {
+	from { opacity: 0; transform: translateY(24px); }
+	to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Top accent bar */
+.conclave-typ__card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 88px;
+	height: 5px;
+	border-radius: 0 0 6px 6px;
+	background: var(--c-orange);
+}
+
+/* ---------------- Badge ---------------- */
+.conclave-typ__badge {
+	position: relative;
+	width: 84px;
+	height: 84px;
+	margin: 6px auto 26px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background: var(--c-orange);
+	color: #fff;
+	box-shadow: 0 14px 30px -8px rgba(246, 110, 31, 0.55);
+	animation: conclave-pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.15s both;
+}
+
+@keyframes conclave-pop {
+	from { opacity: 0; transform: scale(0.4); }
+	to   { opacity: 1; transform: scale(1); }
+}
+
+.conclave-typ__badge-ring {
+	position: absolute;
+	inset: -10px;
+	border-radius: 50%;
+	border: 2px solid var(--c-orange);
+	opacity: 0.35;
+	animation: conclave-ring 2.4s ease-out infinite;
+}
+
+@keyframes conclave-ring {
+	0%   { transform: scale(1);   opacity: 0.5; }
+	70%  { transform: scale(1.35); opacity: 0; }
+	100% { transform: scale(1.35); opacity: 0; }
+}
+
+.conclave-typ__badge-icon svg {
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+
+.conclave-typ__badge--phone .conclave-typ__badge-icon svg {
+	width: 34px;
+	height: 34px;
+}
+
+/* ---------------- Typography ---------------- */
+.conclave-typ__eyebrow {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: var(--c-orange);
+	margin-bottom: 14px;
+}
+
+.conclave-typ__headline {
+	font-size: 42px;
+	line-height: 1.1;
+	font-weight: 900;
+	letter-spacing: -0.02em;
+	color: var(--c-ink);
+	margin: 0 0 18px;
+}
+
+.conclave-typ__accent {
+	color: var(--c-orange);
+}
+
+.conclave-typ__subhead {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: auto;
+	max-width: 100%;
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--c-ink);
+	background: var(--c-orange-soft);
+	padding: 10px 22px;
+	border-radius: 100px;
+	margin: 0 auto 26px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.conclave-typ__pin svg {
+	width: 17px;
+	height: 17px;
+	display: block;
+	color: var(--c-orange);
+}
+
+.conclave-typ__body {
+	font-size: 17px;
+	line-height: 1.7;
+	color: var(--c-muted);
+	max-width: 760px;
+	margin: 0 auto 8px;
+}
+
+.conclave-typ__body--lead {
+	font-size: 18px;
+	color: #4a453f;
+	margin-bottom: 4px;
+}
+
+/* ---------------- Divider label ---------------- */
+.conclave-typ__divider {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin: 34px 0 24px;
+}
+
+.conclave-typ__divider::before,
+.conclave-typ__divider::after {
+	content: "";
+	flex: 1;
+	height: 1px;
+	background: var(--c-line);
+}
+
+.conclave-typ__divider span {
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--c-muted);
+}
+
+/* ---------------- Steps ---------------- */
+.conclave-typ__steps {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 980px;
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+}
+
+.conclave-typ__step {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+	background: #fdfbf9;
+	border: 1px solid var(--c-line);
+	border-radius: 16px;
+	padding: 22px 18px;
+	transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.conclave-typ__step:hover {
+	transform: translateY(-2px);
+	border-color: var(--c-orange-mid);
+	box-shadow: 0 12px 24px -14px rgba(246, 110, 31, 0.35);
+}
+
+.conclave-typ__step-icon {
+	flex-shrink: 0;
+	width: 42px;
+	height: 42px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12px;
+	background: var(--c-orange-soft);
+	color: var(--c-orange);
+}
+
+.conclave-typ__step-icon svg {
+	width: 21px;
+	height: 21px;
+}
+
+.conclave-typ__step-text {
+	font-size: 15.5px;
+	line-height: 1.55;
+	color: #4a453f;
+	padding-top: 0;
+}
+
+.conclave-typ__step-text strong {
+	color: var(--c-ink);
+	font-weight: 800;
+}
+
+.conclave-typ__step-text em {
+	font-style: normal;
+	color: var(--c-muted);
+}
+
+/* Inline "Add to Calendar" */
+.conclave-typ__inline-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: 800;
+	color: var(--c-orange);
+	text-decoration: none;
+	background: var(--c-white);
+	border: 1.5px solid var(--c-orange);
+	padding: 8px 15px;
+	border-radius: 10px;
+	transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.conclave-typ__inline-btn:hover {
+	background: var(--c-orange);
+	color: #fff;
+	transform: translateY(-1px);
+}
+
+.conclave-typ__inline-btn svg {
+	width: 16px;
+	height: 16px;
+}
+
+/* ---------------- Callback CTA panel ---------------- */
+.conclave-typ__cta-panel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 14px;
+	max-width: 620px;
+	margin: 0 auto;
+	text-align: center;
+	background: linear-gradient(135deg, var(--c-orange) 0%, #ff8a3d 100%);
+	border-radius: 20px;
+	padding: 34px 30px;
+	color: #fff;
+	box-shadow: 0 18px 40px -18px rgba(246, 110, 31, 0.6);
+}
+
+.conclave-typ__cta-icon {
+	flex-shrink: 0;
+	width: 46px;
+	height: 46px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.18);
+	color: #fff;
+}
+
+.conclave-typ__cta-icon svg { width: 24px; height: 24px; }
+
+.conclave-typ__cta-lead {
+	font-size: 18px;
+	margin: 0 0 4px;
+	color: #fff;
+}
+
+.conclave-typ__cta-body { width: 100%; }
+
+.conclave-typ__cta-body p {
+	margin: 0 0 6px;
+	font-size: 15.5px;
+	line-height: 1.55;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.conclave-typ__primary-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 9px;
+	margin-top: 12px;
+	font-size: 16px;
+	font-weight: 800;
+	color: var(--c-orange);
+	text-decoration: none;
+	background: #fff;
+	padding: 13px 24px;
+	border-radius: 12px;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.3);
+}
+
+.conclave-typ__primary-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 12px 26px -10px rgba(0, 0, 0, 0.4);
+}
+
+.conclave-typ__primary-btn svg {
+	width: 18px;
+	height: 18px;
+	transition: transform 0.2s ease;
+}
+
+.conclave-typ__primary-btn:hover svg {
+	transform: translateX(4px);
+}
+
+/* ---------------- Note line ---------------- */
+.conclave-typ__note {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin: 24px 0 0;
+	font-size: 15.5px;
+	color: var(--c-muted);
+}
+
+.conclave-typ__note-icon svg {
+	width: 18px;
+	height: 18px;
+	color: var(--c-orange);
+}
+
+/* ---------------- Soft footer ---------------- */
+.conclave-typ__soft {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 14px;
+	max-width: 620px;
+	margin: 34px auto 0;
+	text-align: center;
+	padding-top: 28px;
+	border-top: 1px dashed var(--c-line);
+}
+
+.conclave-typ__soft-icon {
+	flex-shrink: 0;
+	width: 44px;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12px;
+	background: var(--c-orange-soft);
+	color: var(--c-orange);
+}
+
+.conclave-typ__soft-icon svg { width: 22px; height: 22px; }
+
+.conclave-typ__soft-text { width: 100%; }
+
+.conclave-typ__soft-text p {
+	margin: 0 0 12px;
+	font-size: 15.5px;
+	line-height: 1.6;
+	color: #4a453f;
+}
+
+.conclave-typ__contact-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+.conclave-typ__ghost-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 15px;
+	font-weight: 800;
+	color: var(--c-orange);
+	text-decoration: none;
+	background: var(--c-white);
+	border: 1.5px solid var(--c-orange);
+	padding: 10px 18px;
+	border-radius: 11px;
+	transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.conclave-typ__ghost-btn:hover {
+	background: var(--c-orange);
+	color: #fff;
+	transform: translateY(-1px);
+}
+
+.conclave-typ__ghost-btn svg { width: 17px; height: 17px; }
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 880px) {
+	.conclave-typ__steps { grid-template-columns: 1fr; max-width: 460px; }
+}
+
+@media (max-width: 600px) {
+	.conclave-typ { padding: 28px 14px 44px; }
+	.conclave-typ__card { padding: 40px 24px 34px; border-radius: 22px; }
+	.conclave-typ__headline { font-size: 32px; }
+	.conclave-typ__body { font-size: 16px; }
+	.conclave-typ__cta-panel { padding: 26px 20px; }
+	.conclave-typ__step { padding: 20px 18px; }
+	.conclave-typ__subhead { white-space: normal; }
+}

@@ -1,0 +1,40 @@
+/* Stand-in for Elementor's lightbox (dark overlay, centred image, arrows). */
+.e-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.87);
+  user-select: none;
+}
+.e-lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+.e-lightbox button {
+  position: absolute;
+  background: none;
+  border: 0;
+  padding: 15px;
+  color: rgba(238, 238, 238, 0.9);
+  font-size: 25px;
+  cursor: pointer;
+}
+.e-lightbox button:hover {
+  color: #fff;
+  background: none;
+}
+.e-lightbox__close { top: 10px; right: 10px; }
+.e-lightbox__prev { left: 10px; top: 50%; transform: translateY(-50%); }
+.e-lightbox__next { right: 10px; top: 50%; transform: translateY(-50%); }
+.e-lightbox__counter {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: rgba(238, 238, 238, 0.9);
+  font-size: 14px;
+}
