@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Education Leaders Conclave 2026 | The Future of Learning in the AI Era | Agastya, Kuppam</title>
+<meta name="description" content="A 3-day residential working forum for 100+ school leaders at Agastya's 172-acre Creativity Campus, Kuppam. 10–12 December 2026. What should schools prepare children for in the AI Era?">
+<link rel="icon" href="https://conclave.agastya.org/wp-content/uploads/2026/07/Mask-group.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Kalam:wght@400;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orange:#F48132; --orange-deep:#D9661A;
+  --teal:#005E83; --teal-deep:#00415B; --teal-tint:#E5F0F5;
+  --ink:#14262F; --muted:#52656E; --line:#D4E2E8;
+  --bg:#FFFFFF; --bg-alt:#F3F8FA;
+  --sans:'Lato',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --wrap:1180px;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+h1,h2,h3,h4{margin:0;line-height:1.15;font-weight:900;letter-spacing:-.01em}
+h2{font-size:clamp(30px,4.2vw,50px);max-width:20ch}
+h3{font-size:22px;font-weight:700}
+p{margin:0 0 1em;max-width:62ch}
+.kicker{font-size:16px;font-weight:700;color:var(--orange-deep);margin:0 0 14px;display:block}
+.lede{font-size:20px;color:var(--muted);max-width:58ch}
+.mono{font-family:var(--mono)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 28px;border-radius:999px;font-weight:700;font-size:17px;text-decoration:none;border:2px solid transparent;transition:background .15s,color .15s}
+.btn-primary{background:var(--orange);color:#fff}
+.btn-primary:hover{background:var(--orange-deep)}
+.btn-ghost{border-color:currentColor}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.src{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-top:10px}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:3px solid var(--orange);padding-top:env(safe-area-inset-top,0px)}
+.nav .wrap{display:flex;align-items:center;gap:28px;height:84px}
+.brand{display:flex;align-items:center;gap:16px;text-decoration:none}
+.brand img{height:56px;width:auto;flex:0 0 auto}
+.brand span{display:none}
+.brand b{display:block;font-size:15px;font-weight:900;color:var(--teal)}
+.brand small{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0 0 0 auto;padding:0;font-size:15px;font-weight:700;white-space:nowrap}
+.nav ul a{text-decoration:none;color:var(--ink)}
+.nav ul a:hover{color:var(--orange-deep)}
+.nav .btn{padding:11px 22px;font-size:15px;white-space:nowrap}
+@media(max-width:1180px){.nav ul{display:none}.nav .btn{margin-left:auto}}
+@media(max-width:560px){.brand span{display:none}.brand img{height:46px}.nav .wrap{height:72px}}
+
+/* HERO — photographic, editorial */
+.hero{background:#fff;color:var(--ink);padding:0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:48px 24px 64px}
+.hero .kicker{color:var(--orange-deep)}
+.hero h1{font-size:clamp(40px,5vw,70px);line-height:1.02;letter-spacing:-.025em;color:var(--teal)}
+.hero .q{font-size:clamp(22px,2.2vw,30px);font-weight:700;margin:22px 0 0;line-height:1.25;max-width:22ch}
+.hero .sub{color:var(--muted);font-size:18px;margin:16px 0 0;max-width:44ch}
+.meta{display:flex;flex-wrap:wrap;gap:10px 28px;margin:24px 0 22px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.meta div b{display:block;font-size:18px;font-weight:900;color:var(--ink)}
+.meta div span{font-size:14px;color:var(--muted)}
+.hero .cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.hero .btn-ghost{color:var(--teal)}
+.hero .btn-ghost:hover{background:var(--teal-tint)}
+.priceline{margin-top:18px;font-size:15px;color:var(--muted)}
+.priceline b{color:var(--ink);font-size:17px}
+.priceline s{margin:0 6px}
+.priceline .left{color:var(--orange-deep);font-weight:700}
+.seats{grid-column:1/-1;margin:-24px 0 0;padding-top:22px;border-top:1px solid var(--line)}
+.seats-t{font-size:19px;font-weight:700;color:var(--ink);text-align:center;margin:0 0 12px;max-width:none}
+.seats-bar{height:18px;background:#E6E6E6;border-radius:99px;overflow:hidden}
+.seats-bar i{display:block;height:100%;background:var(--orange);border-radius:99px}
+.seats-row{display:flex;justify-content:space-between;gap:12px;margin-top:10px;font-size:15.5px;font-weight:700;color:var(--muted)}
+.seats-row .inc{color:var(--orange-deep);font-weight:400;text-align:center}
+@media(max-width:620px){.seats-row{flex-wrap:wrap}.seats-row .inc{order:3;flex-basis:100%}}
+.mosaic{position:relative;display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:1fr 1fr;gap:14px;height:min(620px,72vh);min-height:460px}
+.mosaic::before{content:"";position:absolute;z-index:0;right:-120px;top:-60px;width:420px;height:420px;border-radius:50%;background:var(--teal-tint)}
+.mosaic img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;border-radius:20px;background:var(--teal-tint)}
+.mosaic .m1{grid-row:1/3;border-radius:200px 200px 20px 20px}
+.mosaic .m3{border-radius:20px 20px 120px 20px}
+.sticker{position:absolute;z-index:2;left:-34px;bottom:44px;width:148px;height:148px;border-radius:50%;background:var(--orange);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-weight:900;font-size:19px;line-height:1.15;box-shadow:0 14px 30px rgba(0,40,60,.25);transform:rotate(-8deg)}
+.sticker small{font-size:12px;font-weight:700;opacity:.9;margin-top:4px}
+@media(max-width:960px){
+  .hero-grid{grid-template-columns:1fr;padding:40px 24px 56px;gap:40px}
+  .mosaic{height:320px;min-height:0;order:-1}
+  .mosaic::before{display:none}
+  .meta{display:grid;grid-template-columns:1fr 1fr}
+  .sticker{left:12px;bottom:12px;width:116px;height:116px;font-size:16px}
+}
+
+/* THE SPLIT — machine vs human */
+.hsplit{display:grid;grid-template-columns:1fr 1fr}
+.hside{padding:64px 56px 72px;position:relative}
+.hside.ai{background:var(--teal-deep);color:#fff;padding-left:max(24px,calc((100vw - var(--wrap))/2 + 24px))}
+.hside.hu{color:#fff;padding-right:max(24px,calc((100vw - var(--wrap))/2 + 24px));overflow:hidden}
+.hside.hu .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hside.hu::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(160deg,rgba(244,129,50,.94),rgba(217,102,26,.82))}
+.hside.hu > *:not(.bg){position:relative;z-index:2}
+.hside h2{font-size:clamp(24px,2.4vw,32px);font-weight:900;margin-bottom:26px;max-width:none}
+.hside.ai h2{color:#BFDCE8}
+.ai ul{list-style:none;margin:0;padding:0;columns:2;column-gap:32px}
+.ai li{font-size:20px;color:#D6EAF2;padding:10px 0;border-bottom:1px solid rgba(191,220,232,.22);break-inside:avoid}
+.hu ul{list-style:none;margin:0;padding:0}
+.hu li{font-size:clamp(28px,3vw,42px);font-weight:900;line-height:1.12;letter-spacing:-.015em}
+.hside .note{margin:28px 0 0;font-size:17px}
+.hside.ai .note{color:#BFDCE8}
+@media(max-width:960px){.hsplit{grid-template-columns:1fr}.hside,.hside.ai,.hside.hu{padding:44px 24px 52px}}
+/* BIG QUESTION */
+.question{padding-bottom:72px}
+.q-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.q-grid h2{font-size:clamp(34px,4.6vw,56px)}
+.stat-stack{display:grid;gap:20px;margin-top:8px}
+.stat{border-left:4px solid var(--orange);padding:4px 0 4px 20px}
+.stat p{font-size:18px;margin:0;color:var(--ink)}
+.stat strong{font-family:var(--mono);font-size:34px;color:var(--teal);display:block;line-height:1.1;margin-bottom:6px;font-weight:500}
+@media(max-width:860px){.q-grid{grid-template-columns:1fr;gap:36px}}
+.pain{background:var(--bg-alt);border-radius:24px;padding:48px;margin-top:64px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.pain h3{font-size:clamp(24px,2.6vw,32px);font-weight:900;line-height:1.25}
+.pain .lines span{display:block}
+.pain .lead{font-size:clamp(28px,3vw,38px);font-weight:900;line-height:1.15;color:var(--teal);margin-bottom:22px}
+.who-list{list-style:none;margin:0 0 28px;padding:0}
+.who-list li{font-size:19px;line-height:1.45;padding:14px 0 14px 20px;border-left:3px solid var(--orange);margin-bottom:12px;background:#fff;border-radius:0 12px 12px 0}
+.who-list b{color:var(--ink);font-weight:900}
+.pain-p{color:var(--muted);font-size:17px}
+.pain-imgs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.pain-imgs img{border-radius:14px;aspect-ratio:3/4;object-fit:cover;width:100%}
+.pain .tag{margin-top:8px;font-weight:700;color:var(--orange-deep);font-size:20px}
+@media(max-width:860px){.pain{grid-template-columns:1fr;padding:28px}}
+
+/* REFRAME — signature split */
+.reframe{background:var(--ink);color:#fff;padding:0}
+.reframe-head{padding:96px 0 24px;text-align:left}
+.reframe-head .kicker{color:#FFC59C}
+.reframe-head h2{max-width:none;font-size:clamp(32px,4.4vw,58px)}
+.reframe-head .after{font-size:clamp(26px,3vw,38px);font-weight:300;color:#FFC59C;margin-top:10px}
+.split{display:grid;grid-template-columns:1fr 1fr}
+.side{padding:56px 48px 64px}
+.side.machine{background:var(--teal-deep)}
+.side.human{background:var(--orange);color:var(--ink)}
+.side h3{font-size:24px;font-weight:900;margin-bottom:28px;display:flex;align-items:center;gap:14px}
+.side h3 img{height:40px;width:auto}
+.machine ul{list-style:none;margin:0;padding:0;font-family:var(--mono);font-size:20px;color:#9CC6D8}
+.machine li{padding:12px 0;border-bottom:1px dashed rgba(156,198,216,.35)}
+.human ul{list-style:none;margin:0;padding:0}
+.human li{font-size:clamp(30px,3.6vw,46px);font-weight:900;line-height:1.15;padding:6px 0;letter-spacing:-.01em}
+.reframe-foot{display:grid;grid-template-columns:1fr 1fr;gap:48px;padding:56px 0 96px}
+.reframe-foot p{color:#C9D9E0}
+.reframe-foot .big{font-size:22px;color:#fff;font-weight:700;line-height:1.45}
+@media(max-width:860px){.split,.reframe-foot{grid-template-columns:1fr}.side{padding:40px 24px}}
+
+/* WHY KUPPAM */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:48px}
+.three h3{color:var(--teal);margin-bottom:10px}
+.three p{color:var(--muted);font-size:17px}
+@media(max-width:860px){.three{grid-template-columns:1fr;gap:28px}}
+.strip{display:flex;gap:14px;overflow-x:auto;padding:40px 24px 8px;scroll-snap-type:x mandatory;max-width:100%}
+.strip img{height:280px;width:auto;border-radius:16px;scroll-snap-align:start;flex:0 0 auto}
+
+/* LAB */
+.lab{background:var(--teal-tint)}
+.stations{list-style:none;padding:0;margin:48px 0 0;display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:2px solid var(--teal)}
+.stations li{padding:24px 20px 28px 0;border-right:1px solid var(--line)}
+.stations li+li{padding-left:20px}
+.stations li:last-child{border-right:0}
+.stations .n{font-weight:700;color:var(--teal);font-size:14px}
+.stations h3{font-size:20px;margin:10px 0 8px}
+.stations p{font-size:16px;color:var(--muted);margin:0}
+.stations li.fail{background:var(--ink);color:#fff;border-radius:0 0 16px 16px;padding-left:20px}
+.stations li.fail .n{color:#FFC59C}
+.stations li.fail p{color:#C9D9E0}
+.lab-close{margin-top:40px;font-size:21px;font-weight:700;color:var(--teal-deep);max-width:52ch}
+@media(max-width:980px){.stations{grid-template-columns:1fr}.stations li,.stations li+li{border-right:0;border-bottom:1px solid var(--line);padding:20px 0}.stations li.fail{padding:20px;border-radius:16px}}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.arc{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0}
+.arc div{background:var(--bg-alt);border-radius:16px;padding:20px}
+.arc b{display:block;font-size:30px;font-weight:900;color:var(--orange-deep)}
+.arc span{font-size:15px;font-weight:700;color:var(--teal)}
+.numbers{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border-radius:20px;overflow:hidden;align-self:start}
+.numbers div{background:#fff;padding:32px 28px}
+.numbers strong{display:block;font-size:clamp(40px,5vw,60px);font-weight:900;color:var(--teal);line-height:1}
+.numbers span{font-family:var(--mono);font-size:14px;color:var(--muted)}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:40px}}
+
+/* CAMPUS */
+.campus{background:var(--teal);color:#fff}
+.campus .kicker{color:#FFC59C}
+.campus .lede{color:#D6EAF2}
+.places{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:48px}
+.places figure{margin:0}
+.places img{border-radius:16px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.places figcaption{font-weight:700;margin-top:12px;font-size:18px}
+.campus .aside{margin-top:36px;font-style:italic;color:#FFC59C;font-size:19px}
+@media(max-width:860px){.places{grid-template-columns:1fr 1fr}}
+
+/* JOURNEY */
+.days{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:56px;position:relative}
+.day{padding:0 32px 0 0}
+.day+.day{padding-left:32px;border-left:1px solid var(--line)}
+.day .moment{font-size:clamp(40px,5vw,64px);font-weight:900;color:var(--orange);line-height:1}
+.day .d{font-weight:700;font-size:14px;color:var(--muted);display:block;margin:14px 0 4px}
+.day h3{color:var(--teal);font-size:22px;margin-bottom:10px}
+.day p{color:var(--ink);font-size:17px}
+.journey-cta{margin-top:48px;display:flex;flex-wrap:wrap;gap:20px;align-items:center}
+.journey-cta small{color:var(--muted);font-size:15px}
+@media(max-width:860px){.days{grid-template-columns:1fr;gap:36px}.day,.day+.day{padding:0;border:0}}
+
+/* CHILDREN SPEAK */
+.circle{background:var(--ink);color:#fff}
+.circle .kicker{color:#FFC59C}
+.circle-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.circle p{color:#C9D9E0}
+.circle .listen{color:#fff;font-size:21px;font-weight:700;border-left:4px solid var(--orange);padding-left:18px;margin-top:28px}
+.circle video{width:100%;border-radius:20px;background:#000;aspect-ratio:16/9}
+@media(max-width:860px){.circle-grid{grid-template-columns:1fr}}
+
+/* SPEAKERS */
+.faculty-tracks{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:40px 0 56px}
+.track{border:1.5px dashed var(--teal);border-radius:18px;padding:24px}
+.track h3{font-size:19px;color:var(--teal);margin-bottom:8px}
+.track p{font-size:16px;color:var(--muted);margin-bottom:14px}
+.badge{font-weight:700;font-size:12.5px;padding:4px 10px;border-radius:99px;display:inline-block}
+.badge.pending{background:var(--teal-tint);color:var(--teal)}
+.badge.ok{background:#FFE6D3;color:var(--orange-deep)}
+.speakers{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.spk{display:grid;grid-template-columns:120px 1fr;gap:22px;padding:28px;background:var(--bg-alt);border-radius:20px}
+.spk img{width:120px;height:120px;object-fit:cover;border-radius:50%;background:var(--teal-tint)}
+.spk h3{font-size:21px}
+.spk .role{font-size:15px;font-weight:700;color:var(--teal);margin:4px 0 12px;display:block}
+.spk p{font-size:15.5px;color:var(--muted);margin:0 0 10px}
+.spk .at{color:var(--ink);font-weight:700}
+.more{margin-top:32px;font-size:17px}
+@media(max-width:980px){.faculty-tracks,.speakers{grid-template-columns:1fr}}
+@media(max-width:520px){.spk{grid-template-columns:1fr}}
+
+/* OUTCOMES */
+.outcomes{background:var(--teal-tint)}
+.out-list{list-style:none;padding:0;margin:48px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:0 56px;counter-reset:o}
+.out-list li{counter-increment:o;display:grid;grid-template-columns:56px 1fr;padding:22px 0;border-bottom:1px solid var(--line);font-size:18px}
+.out-list li::before{content:counter(o,decimal-leading-zero);font-family:var(--mono);color:var(--orange-deep);font-size:15px;padding-top:3px}
+@media(max-width:860px){.out-list{grid-template-columns:1fr}}
+
+/* TESTIMONIALS */
+.voices{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.voice{border-top:3px solid var(--teal);padding-top:22px;display:flex;flex-direction:column}
+.voice blockquote{margin:0 0 20px;font-size:18px;line-height:1.55;flex:1}
+.voice .who{display:flex;gap:14px;align-items:center}
+.voice img{width:52px;height:52px;border-radius:50%;object-fit:cover;background:var(--teal-tint)}
+.voice b{display:block;font-size:16px}
+.voice small{color:var(--muted);font-size:14px;line-height:1.35;display:block}
+@media(max-width:980px){.voices{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.voices{grid-template-columns:1fr}}
+.principals{margin-top:72px}
+.principals h3{font-size:26px;font-weight:900;margin-bottom:24px;max-width:28ch}
+.vids{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.vids figure{margin:0}
+.vids video{width:100%;border-radius:16px;background:#000;aspect-ratio:9/16;object-fit:cover}
+.vids figcaption{font-size:15px;margin-top:10px;color:var(--muted)}
+.vids figcaption b{color:var(--ink);display:block}
+@media(max-width:860px){.vids{grid-template-columns:1fr;max-width:380px}}
+
+/* PRICING */
+.pricing{background:var(--teal);color:#fff}
+.pricing .kicker{color:#FFC59C}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.tier{border-radius:22px;padding:30px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18)}
+.tier .st{font-weight:700;font-size:13px}
+.tier h3{margin:10px 0 18px;font-size:22px}
+.tier strong{font-size:38px;font-weight:900;display:block;line-height:1}
+.tier small{display:block;margin-top:10px;color:#C2DCE7;font-size:15px}
+.tier.closed{opacity:.55}
+.tier.closed strong{text-decoration:line-through}
+.tier.live{background:#fff;color:var(--ink);border:3px solid var(--orange);transform:translateY(-10px)}
+.tier.live .st{color:var(--orange-deep)}
+.tier.live small{color:var(--muted)}
+.tier.live .btn{margin-top:24px;width:100%}
+.pricing .fine{font-size:14px;color:#C2DCE7;margin-top:36px;max-width:80ch}
+.pricing .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+@media(max-width:860px){.tiers{grid-template-columns:1fr}.tier.live{transform:none}}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+details{border-bottom:1px solid var(--line);padding:22px 0}
+summary{cursor:pointer;font-weight:700;font-size:19px;list-style:none;display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--mono);color:var(--orange-deep);font-size:22px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin:14px 0 0;color:var(--muted);font-size:17px}
+@media(max-width:860px){.faq-grid{grid-template-columns:1fr;gap:24px}}
+
+/* CLOSE */
+.close{background:var(--orange);color:var(--ink);padding:0;overflow:hidden}
+.close-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:stretch;min-height:480px}
+.close-txt{padding:80px 56px 80px max(24px,calc((100vw - var(--wrap))/2 + 24px))}
+.close .kicker{color:var(--ink);font-size:15px;opacity:.85}
+.close h2{font-size:clamp(28px,3.2vw,42px);line-height:1.15;max-width:20ch}
+.close .close-sub{font-size:clamp(18px,1.6vw,21px);line-height:1.5;margin:18px 0 0;max-width:40ch}
+.close .cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:32px}
+.close .btn-primary{background:var(--ink)}
+.close .btn-primary:hover{background:var(--teal-deep)}
+.close .btn-ghost{color:var(--ink)}
+.close .btn-ghost:hover{background:rgba(255,255,255,.2)}
+.close .scar{display:inline-block;margin-top:22px;font-size:14px;font-weight:700;background:rgba(255,255,255,.25);padding:6px 14px;border-radius:99px}
+.close-img{position:relative}
+.close-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@media(max-width:860px){.close-grid{grid-template-columns:1fr}.close-txt{padding:56px 24px}.close-img{height:260px;order:-1}}
+
+/* FOOTER */
+footer{background:var(--teal);color:#fff;padding:56px 0 0;font-size:16px}
+.f-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;text-align:center}
+footer h4{font-size:22px;font-weight:700;color:#fff;margin:0 0 28px}
+.f-logo{height:160px;display:flex;align-items:center;justify-content:center}
+.f-logo img{max-height:150px;max-width:100%;width:auto;height:auto;object-fit:contain}
+.f-logo.navam img{max-height:160px}
+.f-logo.acq img{max-height:64px}
+footer .f-desc{margin:24px auto 0;max-width:36ch;font-size:16px;line-height:1.6;color:#E3F0F5;text-align:left}
+footer .copy{border-top:1px solid rgba(255,255,255,.35);margin-top:48px;padding:22px 0 26px;text-align:center;font-size:16px;color:#fff;max-width:none}
+@media(max-width:860px){.f-grid{grid-template-columns:1fr;gap:48px}.f-logo{height:auto}footer .f-desc{text-align:center}}
+
+/* Mobile sticky CTA */
+.mcta{display:none}
+@media(max-width:700px){
+  section{padding:68px 0}
+  .mcta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));gap:12px;align-items:center}
+  .mcta .btn{flex:1;padding:13px}
+  .mcta span{font-size:14px;line-height:1.2}
+  .mcta b{display:block;font-size:17px}
+  body{padding-bottom:76px}
+}
+
+/* ===== WARM / HOMELY LAYER ===== */
+:root{--cream:#FFF8F0;--peach:#FDEBDC;--bg-alt:#FFF3E8;--teal-tint:#E4F1F6;--hand:'Kalam','Comic Neue','Segoe Print',cursive}
+body{background:var(--cream)}
+.nav{background:#fff}
+.hand{font-family:var(--hand);font-weight:700}
+/* soft inset panels instead of hard full-bleed blocks */
+.lab,.outcomes,.campus,.circle,.reframe,.pricing{margin:0 16px;border-radius:40px}
+.lab{background:var(--peach)}
+.outcomes{background:#fff}
+.out-list li{border-bottom:1px dashed #F1C9A8}
+/* reframe: brand teal, not near-black */
+.reframe{background:var(--teal)}
+.reframe-foot p{color:#D6EAF2}
+/* children speak: warm and light */
+.circle{background:var(--peach);color:var(--ink)}
+.circle .kicker{color:var(--orange-deep)}
+.circle p{color:var(--muted)}
+.circle .listen{color:var(--ink)}
+.circle video{border:8px solid #fff;box-shadow:0 18px 40px rgba(120,60,20,.18);transform:rotate(-1deg)}
+/* hero: cream, scrapbook photos */
+.hero{background:var(--cream)}
+.mosaic::before{background:var(--peach)}
+.mosaic .m2{border:8px solid #fff;border-radius:14px;box-shadow:0 14px 30px rgba(120,60,20,.18);transform:rotate(2.5deg)}
+.mosaic .m3{border:8px solid #fff;border-radius:14px;box-shadow:0 14px 30px rgba(120,60,20,.18);transform:rotate(-2deg)}
+.mosaic .m1{box-shadow:0 18px 40px rgba(120,60,20,.18)}
+.sticker{font-family:var(--hand);font-size:22px}
+.sticker small{font-family:var(--sans)}
+.hero .q{position:relative;display:inline-block;padding-bottom:10px}
+.hero .q::after{content:"";position:absolute;left:0;bottom:-4px;width:min(100%,360px);height:14px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 14' preserveAspectRatio='none'%3E%3Cpath d='M2 9 C 60 2, 120 13, 180 6 S 270 4, 298 8' fill='none' stroke='%23F48132' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/100% 100%}
+.seats{border-top:1px dashed #F1C9A8}
+.meta{border-color:#F1C9A8}
+/* cards and photos feel handled, not templated */
+.pain{background:#fff;box-shadow:0 10px 30px rgba(120,60,20,.07)}
+.who-list li{background:var(--cream)}
+.pain-imgs img{border:6px solid #fff;box-shadow:0 10px 24px rgba(120,60,20,.15)}
+.pain-imgs img:nth-child(1){transform:rotate(-2deg)}
+.pain-imgs img:nth-child(3){transform:rotate(2deg)}
+.pain .tag{font-family:var(--hand);font-size:26px}
+.spk{background:#fff;box-shadow:0 8px 24px rgba(120,60,20,.07)}
+.spk img{border:5px solid var(--peach)}
+.track{border-color:#F1C9A8;background:#fff}
+.voice{background:#fff;border-top:0;border-radius:20px;padding:26px;box-shadow:0 8px 24px rgba(120,60,20,.07)}
+.voice blockquote::before{content:"\201C";display:block;font-family:Georgia,serif;font-size:56px;line-height:.6;color:var(--orange);margin-bottom:8px}
+.vids video{border:6px solid #fff;box-shadow:0 12px 28px rgba(120,60,20,.15)}
+.strip img{border:6px solid #fff;box-shadow:0 10px 24px rgba(120,60,20,.12)}
+.places img{border:6px solid rgba(255,255,255,.9)}
+.campus .aside{font-family:var(--hand);font-style:normal;font-size:24px}
+.numbers{background:#F1C9A8}
+.numbers div{background:#fff}
+.arc div{background:#fff;box-shadow:0 6px 18px rgba(120,60,20,.07)}
+details{border-bottom:1px dashed #F1C9A8}
+.close .scar{font-family:var(--hand);font-size:18px;font-weight:700}
+.close{margin:0 16px 48px;border-radius:40px}
+.close-txt{padding-left:56px}
+.pricing .fine{color:#D6EAF2}
+.day+.day{border-left:1px dashed #F1C9A8}
+@media(max-width:700px){.lab,.outcomes,.campus,.circle,.reframe,.pricing,.close{margin-left:8px;margin-right:8px;border-radius:28px}.close-txt{padding-left:24px}}
+.hsplit{margin:0 16px;border-radius:40px;overflow:hidden}
+.hside.ai{padding-left:max(32px,calc((100vw - var(--wrap))/2 + 8px))}
+.hside.hu{padding-right:max(32px,calc((100vw - var(--wrap))/2 + 8px))}
+.stations li.fail{background:var(--teal)}
+.stat strong{font-family:var(--sans);font-weight:900;color:var(--orange-deep)}
+.numbers span{font-family:var(--sans);font-weight:700}
+@media(max-width:700px){.hsplit{margin:0 8px;border-radius:28px}.hside.ai,.hside.hu{padding:40px 24px}}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Agastya Education Leaders Conclave 2026, home">
+      <img src="https://conclave.agastya.org/wp-content/uploads/2026/07/Mask-group.png" alt="Agastya International Foundation">
+      <span><b>Education Leaders Conclave 2026</b><small>10–12 Dec · Kuppam, AP</small></span>
+    </a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#why-kuppam">Why Kuppam</a></li>
+      <li><a href="#ai-lab">AI Experience Lab</a></li>
+      <li><a href="#journey">3-Day Journey</a></li>
+      <li><a href="#speakers">Speakers</a></li>
+      <li><a href="#outcomes">Outcomes</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn-primary" href="https://rzp.io/rzp/ELC2026">Reserve my seat</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Education Leaders Conclave 2026</span>
+      <h1>The Future of Learning in the AI Era</h1>
+      <p class="q">What should schools prepare children for?</p>
+      <p class="sub">Three days with 100+ school leaders on Agastya's 172-acre campus, working out the answer with your own hands.</p>
+      <div class="meta">
+        <div><b>10–12 Dec 2026</b><span>3 days, residential</span></div>
+        <div><b>Kuppam, AP</b><span>Agastya Creativity Campus</span></div>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://rzp.io/rzp/ELC2026">Book my seat</a>
+        <a class="btn btn-ghost" href="https://zfrmz.in/Tcz7v0rVoMUDoBoxPyJg">Request a call back</a>
+      </div>
+      <p class="priceline"><b>₹16,500 + GST</b><s>₹20,000</s>Early Bird Extended price</p>
+    </div>
+    <div class="mosaic">
+      <img class="m1" src="https://conclave.agastya.org/wp-content/uploads/2026/07/Rectangle-10.jpg" alt="A child experimenting at Agastya">
+      <img class="m2" src="https://conclave.agastya.org/wp-content/uploads/2026/07/Rectangle-11.jpg" alt="Hands-on learning at Agastya">
+      <img class="m3" src="https://conclave.agastya.org/wp-content/uploads/2026/07/Rectangle-12.jpg" alt="A discovery moment at Agastya">
+      <div class="sticker">Aah!<br>Aha!<br>Ha-Ha!<small>since 1999</small></div>
+    </div>
+      <div class="seats" role="group" aria-label="Seats claimed">
+        <p class="seats-t">Seats 21–50 (Early Bird Extended)</p>
+        <div class="seats-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20" aria-valuetext="20 of 100 seats claimed"><i style="width:20%"></i></div>
+        <div class="seats-row"><span>0</span><span class="inc">All inclusive (stay, meals and sessions)</span><span>20 / 100 claimed</span></div>
+      </div>
+  </div>
+  <div class="hsplit">
+    <div class="hside ai">
+      <h2>What AI will do</h2>
+      <ul><li>Lesson plans</li><li>Grading</li><li>Tutoring</li><li>Explaining</li><li>Content</li><li>Feedback</li></ul>
+      <p class="note">Already happening in your school.</p>
+    </div>
+    <div class="hside hu">
+      <img class="bg" src="https://conclave.agastya.org/wp-content/uploads/2026/07/b7ba87ef8f7bd13373d68c3e5cbeb56320fe014e-1024x480.png" alt="" aria-hidden="true">
+      <h2>What AI can't teach</h2>
+      <ul><li>Curiosity</li><li>Wonder</li><li>Judgment built by hand</li><li>Discovery</li><li>The "Aha"</li></ul>
+      <p class="note"><b>What these three days are about.</b></p>
+    </div>
+  </div>
+</header>
+
+
+
+<main>
+
+<!-- THE BIG QUESTION -->
+<section class="question" id="about">
+  <div class="wrap">
+    <div class="q-grid">
+      <div>
+        <span class="kicker">The big question</span>
+        <h2>What should schools prepare children for?</h2>
+      </div>
+      <div>
+        <p class="lede">This is the defining question for education in the next decade.</p>
+        <p>This Conclave is a high-stakes working forum. Over three intensive days, 100+ of India's most influential school leaders will build the future rather than just discuss it, creating the actionable policies, teacher pathways and 90-day plans their schools need right now.</p>
+        <div class="stat-stack">
+          <div class="stat">
+            <strong>~1 in 2</strong>
+            <p>ChatGPT users in India are under 24, and OpenAI says India has the world's largest student population on ChatGPT.</p>
+            <div class="src">Source: OpenAI / ETV Bharat, 2026; World Economic Forum</div>
+          </div>
+          <div class="stat">
+            <strong>45%</strong>
+            <p>of K–12 educators have had no formal AI training, and just 8% have had comprehensive training, while 73% of parents say their child already uses AI.</p>
+            <div class="src">Source: Instructure survey (US), 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pain">
+      <div>
+        <h3 class="lead">AI is redefining education.</h3>
+        <ul class="who-list">
+          <li><b>Your students</b> already use it, more than you think.</li>
+          <li><b>Your teachers</b> aren't sure what to embrace and what to fear.</li>
+          <li><b>Your board</b> wants an AI strategy you don't yet have.</li>
+        </ul>
+        <p class="pain-p">The question "what should schools prepare children for?" has a real answer, but you can't hear it from a stage. You have to feel it with your own hands.</p>
+        <p class="tag">That's why this is happening at Agastya.</p>
+      </div>
+      <div class="pain-imgs">
+        <img src="https://conclave.agastya.org/wp-content/uploads/2026/07/Rectangle-10.jpg" alt="Children experimenting at Agastya" loading="lazy">
+        <img src="https://conclave.agastya.org/wp-content/uploads/2026/07/Rectangle-11.jpg" alt="Hands-on learning at Agastya" loading="lazy">
+        <img src="https://conclave.agastya.org/wp-content/uploads/2026/07/Rectangle-12.jpg" alt="Discovery moment at Agastya" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE REFRAME — the core message -->
+<section class="reframe" aria-labelledby="reframe-h">
+  <div class="wrap reframe-head">
+    <span class="kicker">The reframe</span>
+    <h2 id="reframe-h">The question isn't whether AI will change your school.</h2>
+    <p class="after">It's what is left when it does.</p>
+  </div>
+  <div class="wrap reframe-foot">
+    <div>
+      <p>In India, over 50% of leading higher-education institutions already use generative AI to build learning materials, 40% run AI tutoring systems, and 38% use it for automated grading.</p>
+      <div class="src" style="color:#9CC6D8">Source: EY-Parthenon &amp; FICCI, "Future-Ready Campuses," 2025</div>
+    </div>
+    <p class="big">The schools that thrive in the next decade will be built around what AI can't teach. This Conclave is where you learn to build them, by experiencing it yourself.</p>
+  </div>
+</section>
+
+<!-- WHY KUPPAM -->
+<section id="why-kuppam">
+  <div class="wrap">
+    <span class="kicker">Why Kuppam</span>
+    <h2>The world's largest creativity laboratory.</h2>
+    <div class="three">
+      <div>
+        <h3>You do, not watch.</h3>
+        <p>Run real experiments yourself. Feel the "Aha!" you want for your students before they do.</p>
+      </div>
+      <div>
+        <h3>172 acres of proof.</h3>
+        <p>27 years. 40 million children reached. 300,000 teachers trained. Built to nurture curiosity, creativity and confidence.</p>
+      </div>
+      <div>
+        <h3>A room of peers.</h3>
+        <p>Founders, principals and academic heads only. The group is kept intentionally small, so the three days lead to genuine outcomes and lasting connections.</p>
+      </div>
+    </div>
+  </div>
+  <div class="strip" role="region" aria-label="Campus photos, scroll sideways" tabindex="0">
+    <img loading="lazy" alt="Agastya campus" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Screenshot-2026-08-03-144126.png">
+    <img loading="lazy" alt="Agastya campus" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Screenshot-2026-08-03-144051.png">
+    <img loading="lazy" alt="Agastya campus" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Screenshot-2026-08-03-144024.png">
+    <img loading="lazy" alt="Agastya campus" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Screenshot-2026-08-03-143956.png">
+    <img loading="lazy" alt="Agastya campus" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Screenshot-2026-08-03-143925.png">
+    <img loading="lazy" alt="Agastya campus" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Screenshot-2026-08-03-143853.png">
+    <img loading="lazy" alt="Agastya campus" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Screenshot-2026-08-03-143820.png">
+    <img loading="lazy" alt="Agastya campus" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Screenshot-2026-08-03-143756.png">
+    <img loading="lazy" alt="Agastya campus" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Screenshot-2026-08-03-143730.png">
+    <img loading="lazy" alt="Agastya campus" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Screenshot-2026-08-03-143702.png">
+    <img loading="lazy" alt="Agastya campus" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Screenshot-2026-08-03-143633.png">
+    <img loading="lazy" alt="Agastya campus" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Screenshot-2026-08-03-143549.png">
+  </div>
+</section>
+
+<!-- AI EXPERIENCE LAB -->
+<section class="lab" id="ai-lab">
+  <div class="wrap">
+    <span class="kicker">The AI Experience Lab</span>
+    <h2>Five stations. You work every one.</h2>
+    <p class="lede" style="margin-top:18px">You sit down at each station and use the tools your teachers are already quietly using, and find out exactly where they help and exactly where they fail.</p>
+    <ol class="stations">
+      <li><span class="n">Station 1</span><h3>Lesson redesign</h3><p>Rebuild one of your own lessons with AI in the room.</p></li>
+      <li><span class="n">Station 2</span><h3>Differentiation</h3><p>One class, thirty levels. Make it work.</p></li>
+      <li><span class="n">Station 3</span><h3>Feedback at scale</h3><p>What happens to marking when the machine does it.</p></li>
+      <li><span class="n">Station 4</span><h3>Parent communication</h3><p>The messages your school sends, rewritten.</p></li>
+      <li class="fail"><span class="n">Station 5</span><h3>Where AI fails</h3><p>The station that matters most. Watch it break.</p></li>
+    </ol>
+    <p class="lab-close">You leave the Lab with a first-hand map of what AI can carry in your school, and what it cannot.</p>
+  </div>
+</section>
+
+<!-- ABOUT AGASTYA -->
+<section id="about-agastya">
+  <div class="wrap about-grid">
+    <div>
+      <span class="kicker">About Agastya</span>
+      <h2>Every child is naturally curious. Education should build on that.</h2>
+      <p style="margin-top:24px">That belief started Agastya in 1999, when Ramji Raghavan brought together a group of scientists, educators and entrepreneurs around a single idea: children learn through hands-on exploration, and rote memorisation quietly takes that away from them.</p>
+      <p>Today we're one of India's leading education non-profits, and the world's largest creativity laboratory, reaching over 40 million children and 300,000+ teachers across 24 states through mobile science labs, innovation hubs, campus creativity labs, science centres and digital learning platforms.</p>
+      <p><b>Our mission runs on three moments:</b></p>
+      <div class="arc">
+        <div><b>Aah!</b><span>Spark curiosity</span></div>
+        <div><b>Aha!</b><span>Nurture creativity</span></div>
+        <div><b>Ha-Ha!</b><span>Build confidence and caring</span></div>
+      </div>
+      <p>It's how we work towards a world of tinkerers, creators, innovators and solution-seekers who are humane, anchored and connected. It's also how these three days are built.</p>
+    </div>
+    <div class="numbers">
+      <div><strong>27</strong><span>Years</span></div>
+      <div><strong>40M+</strong><span>Children reached</span></div>
+      <div><strong>300K+</strong><span>Teachers trained</span></div>
+      <div><strong>24</strong><span>States</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CAMPUS -->
+<section class="campus" id="campus">
+  <div class="wrap">
+    <span class="kicker">The campus</span>
+    <h2>172 acres built for one thing: the moment discovery lands.</h2>
+    <p class="lede" style="margin-top:18px">Every acre of the campus has been designed over 27 years to produce the "Aha". For three days, it's yours.</p>
+    <div class="places">
+      <figure><img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/07/9868a4db0734c4350603f964a20e8c83fd201b41.png" alt="Guru Graha"><figcaption>Guru Graha</figcaption></figure>
+      <figure><img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/07/b7ba87ef8f7bd13373d68c3e5cbeb56320fe014e-1024x480.png" alt="Bio-discovery Centre"><figcaption>Bio-discovery Centre</figcaption></figure>
+      <figure><img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/07/6659e0a8a746cf323898766bf331d17f3f84121c-1024x485.png" alt="Sensorium"><figcaption>Sensorium</figcaption></figure>
+      <figure><img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Artboard_1.png" alt="Sangamarium"><figcaption>Sangamarium</figcaption></figure>
+    </div>
+    <p class="aside">No photo does this place justice. That's rather the point.</p>
+  </div>
+</section>
+
+<!-- 3-DAY JOURNEY -->
+<section id="journey">
+  <div class="wrap">
+    <span class="kicker">The 3 days</span>
+    <h2>Built on Agastya's own learning arc: Aah, Aha, Ha-Ha.</h2>
+    <div class="days">
+      <div class="day">
+        <div class="moment">Aah</div>
+        <span class="d">Day 1</span>
+        <h3>The Provocation</h3>
+        <p>See what AI is already doing inside classrooms, then map, honestly, what it takes from your school in five years, and the short list it never will.</p>
+      </div>
+      <div class="day">
+        <div class="moment">Aha</div>
+        <span class="d">Day 2</span>
+        <h3>The Immersion</h3>
+        <p>You become the student. Labs, experiments, your own hands. Then build an experiential lesson your teachers can run next week.</p>
+      </div>
+      <div class="day">
+        <div class="moment">Ha-Ha</div>
+        <span class="d">Day 3</span>
+        <h3>The Commitment</h3>
+        <p>Leave with a written 90-day plan ready to implement.</p>
+      </div>
+    </div>
+    <div class="journey-cta">
+      <a class="btn btn-primary" href="https://rzp.io/rzp/ELC2026">Reserve my seat</a>
+      <small>The full session-by-session agenda drops soon. Registered leaders see it first.</small>
+    </div>
+  </div>
+</section>
+
+<!-- THE CHILDREN SPEAK -->
+<section class="circle" aria-labelledby="circle-h">
+  <div class="wrap circle-grid">
+    <div>
+      <span class="kicker">The session no one forgets</span>
+      <h2 id="circle-h">The children speak first. You listen.</h2>
+      <p style="margin-top:20px">A circle of Agastya's Young Instructor Leaders sits at the centre of the room and talks about how they actually learn, what school gets wrong, and what they want from the adults deciding their future.</p>
+      <p class="listen">The principals sit outside the circle. No questions. No corrections. For thirty minutes, you only listen.</p>
+    </div>
+    <video controls playsinline preload="metadata" poster="https://conclave.agastya.org/wp-content/uploads/2026/07/Group-9-1-scaled.jpg">
+      <source src="https://conclave.agastya.org/wp-content/uploads/2026/07/AGASTYA-Video-comoressed.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<!-- SPEAKERS -->
+<section id="speakers">
+  <div class="wrap">
+    <span class="kicker">The voices on stage</span>
+    <h2>A global faculty with distinguished work in AI and education.</h2>
+    <p class="lede" style="margin-top:18px">Over three days, you'll learn from the voices redefining what school is for.</p>
+
+    <div class="faculty-tracks">
+      <div class="track"><h3>Global leaders in AI &amp; education</h3><p>From the labs building the tools your school is now weighing up, and the researchers studying what they do to learning.</p><span class="badge pending">Confirming now</span></div>
+      <div class="track"><h3>A world-renowned voice on how children learn</h3><p>Whose work has reshaped classrooms across the globe, and who answers this room's question better than almost anyone.</p><span class="badge pending">Confirming now</span></div>
+      <div class="track"><h3>Practitioner principals</h3><p>School leaders who've already rebuilt around curiosity, and have the results to prove it works.</p><span class="badge pending">Confirming now</span></div>
+    </div>
+
+    <div class="speakers">
+      <article class="spk">
+        <img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/09/Heather-150x150.webp" alt="Dr. Heather McMahan">
+        <div>
+          <span class="badge ok">Confirmed</span>
+          <h3 style="margin-top:10px">Dr. Heather McMahan</h3>
+          <span class="role">Dean of Parents, Alpha School</span>
+          <p>Heather leads the family side of Alpha School, the AI-powered, student-led school in the US where children finish core academics in two hours a day and score in the nation's top percentiles. Across 25 years she's been a teacher, a founding principal, and a superintendent leading 13 campuses, and once lifted results 40% in a single year on a high-poverty campus.</p>
+          <p class="at">At the Conclave, she unveils what an AI-powered school looks like.</p>
+        </div>
+      </article>
+      <article class="spk">
+        <img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/08/ChatGPT-Image-Aug-24-2026-04_59_51-PM-1024x1024.webp" alt="Prof. Arun K. Tangirala">
+        <div>
+          <span class="badge ok">Confirmed</span>
+          <h3 style="margin-top:10px">Prof. Arun K. Tangirala</h3>
+          <span class="role">Professor, School of Data Science &amp; AI, IIT Madras</span>
+          <p>An expert in data science, AI and systems control, he teaches at IIT Madras and IIT Tirupati, where he serves as Dean of Competency Development and Outreach. He is Chief Coordinator of SWAYAM PRABHA, the Ministry of Education's large-scale digital learning initiative, and Editor-in-Chief at the Institution of Engineers (India), with 100+ published papers.</p>
+          <p class="at">He brings the researcher's clarity to what AI can and can't do for how children learn.</p>
+        </div>
+      </article>
+      <article class="spk">
+        <img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Dr._Vinay_Dabholkar.webp" alt="Dr. Vinay Dabholkar">
+        <div>
+          <span class="badge ok">Confirmed</span>
+          <h3 style="margin-top:10px">Dr. Vinay Dabholkar</h3>
+          <span class="role">President, Catalign Innovation Consulting</span>
+          <p>Vinay teaches innovation and design thinking at IIM Bangalore and IIT Bombay, and is co-author of <i>8 Steps to Innovation: Going from Jugaad to Excellence</i> (HarperCollins). For nearly two decades he has helped leaders build a culture of innovation through 100+ hands-on workshops on design thinking and creative problem-solving.</p>
+          <p class="at">His work focuses on the human skills that matter most as AI reshapes the classroom.</p>
+        </div>
+      </article>
+      <article class="spk">
+        <img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Mr._K.Thiagarajan.webp" alt="K. Thiagarajan">
+        <div>
+          <span class="badge ok">Confirmed</span>
+          <h3 style="margin-top:10px">K. Thiagarajan</h3>
+          <span class="role">Executive Vice-Chairman, Agastya International Foundation</span>
+          <p>A chemical engineer from IIT Madras with an MBA from IIM Ahmedabad, he spent over three decades leading companies across engineering, IT and infrastructure as President, MD and CEO. For 16 years he has run Agastya's operations and scale, growing it into one of India's largest education movements. He has taught and spoken at the IITs, IIMs, ISB and Kellogg, and serves on CII's national committees.</p>
+        </div>
+      </article>
+      <article class="spk">
+        <img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/08/ChatGPT-Image-Aug-5-2026-04_04_40-PM-1-1024x1024.webp" alt="Ramji Raghavan">
+        <div>
+          <span class="badge ok">Host</span>
+          <h3 style="margin-top:10px">Ramji Raghavan</h3>
+          <span class="role">Founder &amp; Chairman, Agastya International Foundation</span>
+          <p>In 1998 he left a banking career across Citibank in India, Puerto Rico and New York to start Agastya, and spent the next 27 years building it into the world's largest creativity laboratory, reaching over 40 million children and 300,000 teachers. He has served on the Government of India's Central Advisory Board of Education and spoken at Stanford, MIT Media Lab, the Clinton Global Initiative and the Education World Forum. Under his chairmanship, Agastya won the Google Global Impact Award and was ranked among the Rockefeller Foundation's top 100 global innovators.</p>
+          <p class="at">Fireside, under the stars: what a lifetime of wonder teaches about what machines can't touch.</p>
+        </div>
+      </article>
+      <article class="spk">
+        <img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/07/Frame-150.png" alt="Mahavir Kumar">
+        <div>
+          <span class="badge ok">Confirmed</span>
+          <h3 style="margin-top:10px">Mahavir Kumar</h3>
+          <span class="role">Managing Trustee, Agastya International Foundation</span>
+          <p>[Bio to be supplied by Agastya]</p>
+        </div>
+      </article>
+    </div>
+    <p class="more"><b>The full faculty is announced over the coming weeks.</b> Registered leaders hear every name first.</p>
+  </div>
+</section>
+
+<!-- OUTCOMES -->
+<section class="outcomes" id="outcomes">
+  <div class="wrap">
+    <span class="kicker">What you leave with</span>
+    <h2>Three days that will reshape your school's future.</h2>
+    <ol class="out-list">
+      <li><span>A ready-to-run experiential lesson: no prep required, immediate classroom impact.</span></li>
+      <li><span>A customised AI use policy, drafted and aligned to your school's context.</span></li>
+      <li><span>A redesigned assessment model that ensures authentic student work, AI-proof by design.</span></li>
+      <li><span>Your school's AI Era Readiness Diagnostic: a data-driven score, not guesswork.</span></li>
+      <li><span>A concrete 90-day action plan, built for execution from day one.</span></li>
+      <li><span>Your commitment inscribed in the Kuppam Principal Charter 2026.</span></li>
+      <li><span>Full campus immersion: 2 nights, all meals, lab access and 172 acres of learning space.</span></li>
+      <li><span>A network of 100 forward-thinking principals, plus ongoing community access and a curated resource library.</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="voices">
+  <div class="wrap">
+    <span class="kicker">What leaders say</span>
+    <h2>Leaders who've stood on this campus.</h2>
+    <div class="voices">
+      <figure class="voice"><blockquote>"Curiosity is the secret sauce to science, technology, engineering and mathematics (STEM)."</blockquote><figcaption class="who"><img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/08/ChatGPT-Image-Aug-3-2026-02_53_19-PM-300x300.png" alt=""><span><b>Kiran Mazumdar-Shaw</b><small>Executive Chairperson, Biocon &amp; Biologics</small></span></figcaption></figure>
+      <figure class="voice"><blockquote>"The purpose of Agastya, in my opinion, is not to teach science but to arouse curiosity through the medium of science. When the child gets curious, he wants to learn."</blockquote><figcaption class="who"><img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/07/wow-image-→-Picture-1-300x280.png" alt=""><span><b>Rakesh Jhunjhunwala</b><small>Investor and Philanthropist</small></span></figcaption></figure>
+      <figure class="voice"><blockquote>"When Ramji explained the van [Mobile Science Lab] to me, I said I would buy it and if it was any good, I would get L&amp;T to buy it for every location. I felt it was good, so we now have 11 or 12 mobile labs."</blockquote><figcaption class="who"><img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Naik-comp_01.avif" alt=""><span><b>AM Naik</b><small>Former Executive Chairman, Larsen &amp; Toubro</small></span></figcaption></figure>
+      <figure class="voice"><blockquote>"Agastya is managing to expand in a macro way, but within the micro level. This is mezzo."</blockquote><figcaption class="who"><img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Tadashi_Tokieda_1.avif" alt=""><span><b>Tadashi Tokieda</b><small>Stanford University</small></span></figcaption></figure>
+      <figure class="voice"><blockquote>"Agastya found the formula needed to ignite the child's mind, to help the child explore the process of comprehension and allow the child to develop the ability to use such learning to creatively solve problems."</blockquote><figcaption class="who"><img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/08/new-isro-chief-kiran-kumar-sac-ahmedabad-jan-2015.avif" alt=""><span><b>AS Kiran Kumar</b><small>Former Chairman, ISRO</small></span></figcaption></figure>
+      <figure class="voice"><blockquote>"A truly remarkable story. Agastya's journey is one we can all learn from. Its mission is one we should all try and be a part of."</blockquote><figcaption class="who"><img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/08/i-survived-at-sbi-because-i-was-learning-every-day-arundhati-bhattacharya.avif" alt=""><span><b>Arundhati Bhattacharya</b><small>Chairperson and CEO, Salesforce India; Former Chairperson, State Bank of India</small></span></figcaption></figure>
+      <figure class="voice"><blockquote>"I think the beauty of Agastya has been to leverage the power of experimentation to communicate scientific ideas. It creates the foundation to enhance the curiosity of children."</blockquote><figcaption class="who"><img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/08/nrn.avif" alt=""><span><b>NR Narayana Murthy</b><small>Founder, Infosys Ltd.</small></span></figcaption></figure>
+      <figure class="voice"><blockquote>"What we need in society is more curiosity, the foundation of creativity, of searching and questioning."</blockquote><figcaption class="who"><img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/08/Huggy-Rao-headshot.avif" alt=""><span><b>Hayagreeva "Huggy" Rao</b><small>Stanford University</small></span></figcaption></figure>
+      <figure class="voice"><blockquote>"Agastya's noble and transformative work will go in the annals of history as a spectacular yet unassuming contribution for generations to come."</blockquote><figcaption class="who"><img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/08/TVSN-Prasad.avif" alt=""><span><b>TVSN Prasad</b><small>Former Chief Secretary, Government of Haryana</small></span></figcaption></figure>
+    </div>
+
+    <div class="principals">
+      <h3>Principals who've already been. In December, 100 more leaders join them.</h3>
+      <div class="vids">
+        <figure>
+          <video controls playsinline preload="metadata"><source src="https://conclave.agastya.org/wp-content/uploads/2026/08/Dr-Bindu-Sharma-Principal-DPS-Greater-Faridabad-Haryana.mp4" type="video/mp4"></video>
+          <figcaption><b>Dr. Bindu Sharma</b>Principal, DPS Greater Faridabad, Haryana</figcaption>
+        </figure>
+        <figure>
+          <video controls playsinline preload="metadata"><source src="https://conclave.agastya.org/wp-content/uploads/2026/08/Dr-Karuna-Prasad-Principal-The-Pentacostal-Assembly-School-1.mp4" type="video/mp4"></video>
+          <figcaption><b>Dr. Karuna Prasad</b>Principal, The Pentecostal Assembly School</figcaption>
+        </figure>
+        <figure>
+          <video controls playsinline preload="metadata"><source src="https://conclave.agastya.org/wp-content/uploads/2026/08/Dr-Saurabh-Malhotra-Principal-Gurusharan-Convent-Paschim-Vihar-Delhi.mp4" type="video/mp4"></video>
+          <figcaption><b>Dr. Saurabh Malhotra</b>Principal, Gurusharan Convent, Paschim Vihar, Delhi</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="register">
+  <div class="wrap">
+    <span class="kicker">Reserve your Conclave seat</span>
+    <h2>100 seats. Priced to reward the decisive.</h2>
+    <div class="tiers">
+      <div class="tier closed">
+        <span class="st">Closed</span>
+        <h3>Early Bird</h3>
+        <strong>₹14,000</strong>
+        <small>+ GST · first 20 seats</small>
+      </div>
+      <div class="tier live">
+        <span class="st">● Live now</span>
+        <h3>Early Bird Extended</h3>
+        <strong>₹16,500</strong>
+        <small>+ GST · limited seats remaining</small>
+        <a class="btn btn-primary" href="https://rzp.io/rzp/ELC2026">Reserve my seat</a>
+      </div>
+      <div class="tier">
+        <span class="st">Next</span>
+        <h3>Standard</h3>
+        <strong>₹20,000</strong>
+        <small>+ GST · the last of the 100</small>
+      </div>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-ghost" href="https://zfrmz.in/Tcz7v0rVoMUDoBoxPyJg">Request a call back</a>
+    </div>
+    <p class="fine">All inclusive: two nights' campus accommodation, all meals, every session and lab access. By registering, you confirm you have authorised pedagogy decision power. Payments are processed by Navam Foundation, Agastya's associate organisation, so your card statement will show Navam Foundation. Your seat is confirmed by Agastya.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap faq-grid">
+    <div>
+      <span class="kicker">FAQ</span>
+      <h2>Questions leaders ask.</h2>
+    </div>
+    <div>
+      <details><summary>How do I get to Kuppam?</summary><p>Fly into Bengaluru or Chennai. Campus transfers are arranged from the nearest arrival points, and full travel instructions go to every registered leader.</p></details>
+      <details><summary>What's included in the ticket?</summary><p>Everything except your travel to Kuppam: two nights' campus accommodation, all meals from welcome lunch to farewell lunch, full access to the labs and the 172-acre campus, every session, the AI Experience Lab, all Action Labs, your Readiness Diagnostic and 90-day plan, certificate, and post-conclave community access.</p></details>
+      <details><summary>Is this for teachers?</summary><p>No. This is a leadership room: school founders and owners, principals and heads of school, academic and curriculum heads. People who can decide what changes on Monday.</p></details>
+      <details><summary>Do I need to know anything about AI already?</summary><p>No. The AI Experience Lab starts where you are. Leaders who have never opened an AI tool and leaders already piloting them both leave with the same thing: a clear map of where it helps their school and where it fails.</p></details>
+      <details><summary>When is the full agenda out?</summary><p>Soon. Registered leaders receive it first, along with speaker announcements as they're confirmed.</p></details>
+      <details><summary>What if I need to cancel or send someone else?</summary><p>Tickets are non-cancellable. If you're unable to attend, you may transfer your ticket to someone else by sharing your registration details with them.</p></details>
+      <details><summary>Who am I paying, and what appears on my statement?</summary><p>The Conclave is hosted by Agastya International Foundation and delivered with its associate organisation, Navam Foundation, which securely processes event registrations. Your payment goes to Navam Foundation and your card statement will reflect that. Your seat is confirmed by Agastya.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSE -->
+<section class="close">
+  <div class="close-grid">
+    <div class="close-txt">
+      <span class="kicker">Agastya Creativity Campus, Kuppam · 10–12 Dec 2026</span>
+      <h2>In five years, AI will run much of what your school does today.</h2>
+      <p class="close-sub">These three days are about what it won't be able to do, and how you build more of it.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://rzp.io/rzp/ELC2026">Reserve my seat</a>
+        <a class="btn btn-ghost" href="https://zfrmz.in/Tcz7v0rVoMUDoBoxPyJg">Request a call back</a>
+      </div>
+      <span class="scar">100 seats. Then it's a waitlist.</span>
+    </div>
+    <div class="close-img">
+      <img loading="lazy" src="https://conclave.agastya.org/wp-content/uploads/2026/07/6659e0a8a746cf323898766bf331d17f3f84121c-1024x485.png" alt="The Sensorium at Agastya Creativity Campus">
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>Organised by &amp; at</h4>
+        <div class="f-logo"><img src="https://conclave.agastya.org/wp-content/uploads/2026/07/Untitled-design-15-e1786543816928.png" alt="Agastya International Foundation, supported by RaRe Family Foundation &amp; Others"></div>
+        <p class="f-desc">Agastya International Foundation. Sparking curiosity in children since 1999. Agastya Creativity Campus, Kuppam, Andhra Pradesh.</p>
+      </div>
+      <div>
+        <h4>Booking Partner</h4>
+        <div class="f-logo navam"><img src="https://conclave.agastya.org/wp-content/uploads/2026/07/Navam.png" alt="Navam"></div>
+      </div>
+      <div>
+        <h4>Growth &amp; Outreach Partner</h4>
+        <div class="f-logo acq"><img src="https://conclave.agastya.org/wp-content/uploads/2026/07/admin-ajax-1-e1786710290925.png" alt="Acquirely"></div>
+      </div>
+    </div>
+  </div>
+  <p class="copy">© 2026 Agastya International Foundation</p>
+</footer>
+
+<div class="mcta" aria-label="Quick booking">
+  <span><b>₹16,500 + GST</b>Early Bird Extended</span>
+  <a class="btn btn-primary" href="https://rzp.io/rzp/ELC2026">Reserve my seat</a>
+</div>
+
+</body>
+</html>
