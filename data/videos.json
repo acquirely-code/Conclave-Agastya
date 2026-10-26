@@ -1,7 +1,7 @@
 {
   "_help": "Paste a Wistia media ID (e.g. 0g6wiv1xzt, the last part of the Wistia link) next to each video. Leave empty to use the original MP4 / poster.",
   "6532563": { "label": "Children's circle (THE SESSION NO ONE FORGETS)", "wistia": "" },
-  "6ea227a": { "label": "Dr Bindu Sharma, Principal, DPS Greater Faridabad", "wistia": "" },
-  "7972167": { "label": "Dr Karuna Prasad, Principal, The Pentecostal Assembly School", "wistia": "" },
-  "714c951": { "label": "Dr Saurabh Malhotra, Principal, Gurusharan Convent", "wistia": "" }
+  "6ea227a": { "label": "Dr Bindu Sharma, Principal, DPS Greater Faridabad", "wistia": "w2mc6nn0ta" },
+  "7972167": { "label": "Dr Karuna Prasad, Principal, The Pentecostal Assembly School", "wistia": "j4ewrjl85p" },
+  "714c951": { "label": "Dr Saurabh Malhotra, Principal, Gurusharan Convent", "wistia": "z4hgi0jogn" }
 }
