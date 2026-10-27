@@ -67,3 +67,18 @@ text-align: left;
 flex: 0 0 auto;}/* End custom CSS */
 /* Start custom CSS for heading, class: .elementor-element-3c48ed5 */.b-z6ygwg { font-weight: 900; }/* End custom CSS */
 /* Start custom CSS for container, class: .elementor-element-d0568e7 */.elementor-25 .elementor-element.elementor-element-d0568e7{max-width: 1120px;}/* End custom CSS */
+/* Price row: keep the struck price, offer price and early-bird note on one centred line */
+@media(min-width:768px){.elementor-25 .elementor-element.elementor-element-83fc4c9{--align-items:center;--column-gap:24px;}
+.elementor-25 .elementor-element.elementor-element-4bb7910,.elementor-25 .elementor-element.elementor-element-aa02b55,.elementor-25 .elementor-element.elementor-element-ef9cc00{padding-top:0;margin-top:0;}
+.elementor-25 .elementor-element.elementor-element-4bb7910 p,.elementor-25 .elementor-element.elementor-element-aa02b55 h4,.elementor-25 .elementor-element.elementor-element-ef9cc00 p{margin:0;line-height:1.3;}
+.elementor-25 .elementor-element.elementor-element-aa02b55{white-space:nowrap;}
+.elementor-25 .elementor-element.elementor-element-ef9cc00{flex:1 1 0;min-width:0;text-align:left;}}
+
+/* Speaker cards: lay the three card columns out as one grid so side-by-side cards share a row height and the "Confirmed" tag sits at the bottom */
+@media(min-width:768px){.elementor-25 .elementor-element.elementor-element-8c21f30{grid-template-columns:repeat(3,1fr);grid-auto-flow:row dense;row-gap:0;}
+.elementor-25 .elementor-element.elementor-element-84c7b94,.elementor-25 .elementor-element.elementor-element-7e939af,.elementor-25 .elementor-element.elementor-element-e3fba12{display:contents;}
+.elementor-25 .elementor-element.elementor-element-84c7b94>.e-con{grid-column:1;}
+.elementor-25 .elementor-element.elementor-element-7e939af>.e-con{grid-column:2;}
+.elementor-25 .elementor-element.elementor-element-e3fba12>.e-con{grid-column:3;}
+.elementor-25 .elementor-element.elementor-element-84c7b94>.e-con:first-child,.elementor-25 .elementor-element.elementor-element-7e939af>.e-con:first-child,.elementor-25 .elementor-element.elementor-element-e3fba12>.e-con:first-child{border-top:4px solid var(--e-global-color-bb1c291);border-radius:4px 4px 0 0;}
+.elementor-25 .elementor-element.elementor-element-8c21f30 .elementor-widget-heading:last-child{margin-top:auto;}}
