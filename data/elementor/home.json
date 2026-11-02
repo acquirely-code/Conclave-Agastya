@@ -2128,7 +2128,7 @@
          "id": "ef9cc00",
          "elType": "widget",
          "settings": {
-          "editor": "<p>Early bird extended (closing on 31st Oct)<br>Limited Seats</p>",
+          "editor": "<p>Early bird extended (closing on 7th Nov)<br>Limited Seats</p>",
           "typography_typography": "custom",
           "typography_font_family": "Lato",
           "typography_font_size": {
@@ -24980,7 +24980,7 @@
                "id": "eff11fb",
                "elType": "widget",
                "settings": {
-                "title": "Early bird extended (closing on 31st Oct)",
+                "title": "Early bird extended (closing on 7th Nov)",
                 "align": "start",
                 "typography_typography": "custom",
                 "typography_font_family": "Lato",

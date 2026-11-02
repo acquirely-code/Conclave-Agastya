@@ -1,0 +1,44 @@
+/* Scrolling announcement strip (components/AnnouncementBar.jsx).
+   The hero section has margin-top:-150px to slide under the header, so the strip must stack above it. */
+.announce-bar {
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  background: #ff7d32;
+  color: #ffffff;
+  font-family: "Lato", Sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 11px 0;
+  white-space: nowrap;
+}
+.announce-bar__track {
+  display: inline-flex;
+  animation: announce-bar-scroll 60s linear infinite;
+}
+.announce-bar:hover .announce-bar__track {
+  animation-play-state: paused;
+}
+.announce-bar__item {
+  padding-right: 48px;
+}
+.announce-bar__item::after {
+  content: "\2022";
+  padding-left: 48px;
+}
+@keyframes announce-bar-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (max-width: 767px) {
+  .announce-bar { font-size: 13px; padding: 9px 0; }
+  .announce-bar__track { animation-duration: 45s; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .announce-bar { white-space: normal; text-align: center; padding: 10px 16px; line-height: 1.4; }
+  .announce-bar__track { animation: none; display: none; }
+  .announce-bar .screen-reader-text {
+    position: static; clip: auto; clip-path: none; width: auto; height: auto; margin: 0; overflow: visible;
+  }
+}

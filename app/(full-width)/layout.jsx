@@ -1,5 +1,6 @@
 // Home page: Elementor "Full Width" template with the Elementor Pro header (#16) and footer (#29).
 import '../lightbox.css';
+import '../announcement.css';
 import SiteHead, { PixelNoscript, siteIcons } from '@/components/SiteHead';
 import Frontend from '@/components/elementor/Frontend';
 
