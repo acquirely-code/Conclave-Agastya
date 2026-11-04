@@ -9,6 +9,9 @@
   color: #1f2933;
   font-family: Inter, sans-serif;
 }
+.callback-form:focus {
+  outline: none;
+}
 .callback-form::backdrop {
   background: rgba(0, 0, 0, 0.6);
 }
@@ -115,10 +118,54 @@
   cursor: pointer;
 }
 .callback-form__thanks {
-  margin: 0;
-  padding: 36px 24px 28px;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.4;
+  padding: 20px 8px 4px;
   text-align: center;
+}
+.callback-form__tick {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #f66e1f;
+  box-shadow: 0 0 0 10px rgba(246, 110, 31, 0.15);
+  color: #fff;
+  animation: callback-form-pop 0.35s ease-out;
+}
+.callback-form__tick svg {
+  width: 36px;
+  height: 36px;
+}
+.callback-form__thanks .callback-form__eyebrow {
+  margin: 0 0 10px;
+  color: #f66e1f;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.callback-form .callback-form__thanks h2 {
+  margin: 0 0 10px;
+  font-family: Lato, sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+}
+.callback-form__thanks p {
+  margin: 0 0 24px;
+  color: #52606d;
+  font-size: 17px;
+  line-height: 1.5;
+}
+@keyframes callback-form-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .callback-form__tick {
+    animation: none;
+  }
 }

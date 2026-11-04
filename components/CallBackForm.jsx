@@ -86,7 +86,15 @@ export default function CallBackForm() {
       <div className="callback-form__panel">
         <button type="button" className="callback-form__close" aria-label="Close" onClick={() => dialog.current.close()}>&times;</button>
         {status === 'done' ? (
-          <p className="callback-form__thanks" role="status">Thank you for filling the details. Our team will contact you soon.</p>
+          <div className="callback-form__thanks" role="status">
+            <span className="callback-form__tick" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </span>
+            <p className="callback-form__eyebrow">The Education Leaders Conclave 2026</p>
+            <h2>Thank you for filling the details.</h2>
+            <p>Our team will contact you soon.</p>
+            <button type="button" className="callback-form__submit" onClick={() => dialog.current.close()}>Done</button>
+          </div>
         ) : (
           <form onSubmit={onSubmit}>
             <h2>Request A Call Back</h2>
