@@ -64,7 +64,7 @@ function attachmentUrl(id, size) {
 const out = p => { const f = path.join(proj, p); fs.mkdirSync(path.dirname(f), { recursive: true }); return f; };
 
 // 1. Elementor documents
-const docs = { 25: 'home', 16: 'header', 583: 'header-alt', 29: 'footer', 571: 'welcome-to-kuppam', 572: 'thank-you' };
+const docs = { 25: 'home', 16: 'header', 583: 'header-alt', 29: 'footer', 571: 'welcome-to-kuppam' };
 for (const [id, name] of Object.entries(docs)) {
   const data = JSON.parse(rewrite(meta[id]._elementor_data));
   const post = posts.find(p => p.id === +id);

@@ -1,14 +1,13 @@
 // The WordPress shortcodes used on the site, each ported from its custom plugin.
 import { LabProgress, LabStations } from './LabSections';
 import Testimonials from './Testimonials';
-import { ThankYouReserved, ThankYouCallback } from './ThankYou';
+import { ThankYouReserved } from './ThankYou';
 
 const SHORTCODES = {
   lab_progress: LabProgress,
   lab_stations: LabStations,
   agastya_testimonials: Testimonials,
   conclave_thankyou_reserved: ThankYouReserved,
-  conclave_thankyou_callback: ThankYouCallback,
 };
 
 export const SHORTCODE_RE = new RegExp(`\\[(${Object.keys(SHORTCODES).join('|')})([^\\]]*)\\]`);

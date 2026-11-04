@@ -10,7 +10,6 @@ It was originally a WordPress + Elementor site on Hostinger. This repo rebuilds 
 |---|---|
 | `/` | Home page |
 | `/welcome-to-kuppam` | Thank-you page after buying a seat (Razorpay) |
-| `/thank-you` | Old call-back thank-you page, used only by the previous Zoho form |
 
 Payments are handled by Razorpay: `https://rzp.io/rzp/ELC2026`
 
@@ -66,7 +65,7 @@ Images and other media live in `public/wp-content/uploads/`, with the same paths
 ```
 app/                         Next.js routes
   (full-width)/              home page with its own <html>/<body> layout
-  (default)/                 thank-you pages (welcome-to-kuppam, thank-you)
+  (default)/                 payment thank-you page (welcome-to-kuppam)
   lightbox.css
 components/
   elementor/                 renders Elementor layouts as React

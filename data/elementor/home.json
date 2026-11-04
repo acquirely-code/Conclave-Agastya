@@ -8755,9 +8755,9 @@
        "id": "079831c",
        "elType": "widget",
        "settings": {
-        "text": "Reserve My Seat",
+        "text": "Request A Call Back",
         "link": {
-         "url": "https://rzp.io/rzp/ELC2026",
+         "url": "#request-call",
          "is_external": "",
          "nofollow": "",
          "custom_attributes": ""

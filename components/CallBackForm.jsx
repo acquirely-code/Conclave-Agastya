@@ -104,7 +104,7 @@ export default function CallBackForm() {
               <Field label="State *"><input name="state" autoComplete="address-level1" required /></Field>
             </div>
             <Field label="Your role *"><Select name="role" options={ROLES} required /></Field>
-            <Field label="Preferred time for the call"><Select name="call_time" options={CALL_TIMES} /></Field>
+            <Field label="Preferred time for the call *"><Select name="call_time" options={CALL_TIMES} required /></Field>
             {status === 'error' && <p className="callback-form__error" role="alert">Sorry, we couldn&rsquo;t save your details. Please try again, or call us on +91 80411 24132.</p>}
             <button type="submit" className="callback-form__submit" disabled={status === 'sending'}>{status === 'sending' ? 'Submitting…' : 'Submit'}</button>
           </form>

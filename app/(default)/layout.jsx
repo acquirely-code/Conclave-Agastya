@@ -1,8 +1,10 @@
 // Thank-you pages: Hello theme default template, "Header Footer Elementor" header (#583)
 // and the Elementor Pro footer (#29).
 import '../lightbox.css';
+import '../callback-form.css';
 import SiteHead, { PixelNoscript, siteIcons } from '@/components/SiteHead';
 import Frontend from '@/components/elementor/Frontend';
+import CallBackForm from '@/components/CallBackForm';
 import ElementorDocument from '@/components/ElementorDocument';
 import headerAlt from '@/data/elementor/header-alt.json';
 import footer from '@/data/elementor/footer.json';
@@ -28,6 +30,7 @@ export default function DefaultLayout({ children }) {
           <ElementorDocument doc={footer} as="footer" type="footer" postType="elementor_library" className="elementor-location-footer" />
         </div>
         <Frontend />
+        <CallBackForm />
       </body>
     </html>
   );
