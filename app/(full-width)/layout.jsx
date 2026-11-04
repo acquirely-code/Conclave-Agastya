@@ -20,6 +20,7 @@ export default function FullWidthLayout({ children }) {
         {children}
         <Frontend />
         <CallBackForm />
+        <div className="callback-sticky"><a href="#request-call">Request A Call Back</a></div>
       </body>
     </html>
   );
