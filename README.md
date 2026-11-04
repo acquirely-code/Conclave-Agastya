@@ -11,7 +11,7 @@ It was originally a WordPress + Elementor site on Hostinger. This repo rebuilds 
 | `/` | Home page |
 | `/welcome-to-kuppam` | Thank-you page after buying a seat (Razorpay) |
 
-Payments are handled by Razorpay: `https://rzp.io/rzp/ELC2026`
+Payments are handled by Razorpay: 
 
 ## Call-back form
 
