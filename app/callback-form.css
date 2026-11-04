@@ -1,0 +1,104 @@
+/* "Request A Call Back" pop-up form. */
+.callback-form {
+  width: min(520px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 16px;
+  color: #1f2933;
+  font-family: Inter, sans-serif;
+}
+.callback-form::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+.callback-form__panel {
+  position: relative;
+  padding: 28px;
+}
+.callback-form h2 {
+  margin: 0 32px 18px 0;
+  color: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.callback-form__field {
+  display: block;
+  flex: 1;
+  min-width: 0;
+  margin-bottom: 14px;
+}
+.callback-form__field span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.callback-form .callback-form__field input,
+.callback-form .callback-form__field select {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid #c5ccd3;
+  border-radius: 8px;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+  font-size: 16px;
+}
+.callback-form .callback-form__field input:focus,
+.callback-form .callback-form__field select:focus {
+  border-color: #f66e1f;
+  outline: 2px solid rgba(246, 110, 31, 0.25);
+}
+.callback-form__row {
+  display: flex;
+  gap: 12px;
+}
+.callback-form__error {
+  margin: 0 0 14px;
+  color: #b42318;
+  font-size: 14px;
+}
+.callback-form .callback-form__submit,
+.callback-form .callback-form__submit:hover,
+.callback-form .callback-form__submit:focus {
+  width: 100%;
+  padding: 13px;
+  border: 0;
+  border-radius: 32px;
+  background: #f66e1f;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.callback-form .callback-form__submit:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+.callback-form .callback-form__close,
+.callback-form .callback-form__close:hover,
+.callback-form .callback-form__close:focus {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #52606d;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+.callback-form__thanks {
+  margin: 0;
+  padding: 36px 24px 28px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+}

@@ -1,8 +1,10 @@
 // Home page: Elementor "Full Width" template with the Elementor Pro header (#16) and footer (#29).
 import '../lightbox.css';
 import '../announcement.css';
+import '../callback-form.css';
 import SiteHead, { PixelNoscript, siteIcons } from '@/components/SiteHead';
 import Frontend from '@/components/elementor/Frontend';
+import CallBackForm from '@/components/CallBackForm';
 
 export const metadata = { title: 'Agastya', icons: siteIcons };
 
@@ -17,6 +19,7 @@ export default function FullWidthLayout({ children }) {
         <a className="skip-link screen-reader-text" href="#content">Skip to content</a>
         {children}
         <Frontend />
+        <CallBackForm />
       </body>
     </html>
   );

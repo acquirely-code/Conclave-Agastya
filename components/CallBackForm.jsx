@@ -1,0 +1,105 @@
+'use client';
+// "Request A Call Back" pop-up: saves the principal's details and ad attribution to the Google Sheet (data/site.json → leadSheetUrl).
+import { useEffect, useRef, useState } from 'react';
+import site from '@/data/site.json';
+
+const OPEN_LINK = 'a[href="#request-call"]';
+const PARAMS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id', 'fbclid'];
+const STORED_PARAMS = 'conclave_attribution';
+
+const BOARDS = ['CBSE', 'IB', 'IGCSE', 'ICSE', 'State Board', 'Other'];
+const ROLES = ['Founder / Owner', 'Principal / Head of School', 'Academic / Curriculum Head'];
+const CALL_TIMES = ['9am - 1pm', '1pm - 4pm', '4pm - 7pm'];
+
+// Storage can be blocked by the browser; tracking must never break the form.
+function readAttribution() {
+  try { return JSON.parse(sessionStorage.getItem(STORED_PARAMS)) || {}; } catch { return {}; }
+}
+
+function storeAttribution() {
+  const landing = new URLSearchParams(location.search);
+  const found = PARAMS.filter(p => landing.get(p)).map(p => [p, landing.get(p)]);
+  if (!found.length) return;
+  try { sessionStorage.setItem(STORED_PARAMS, JSON.stringify(Object.fromEntries(found))); } catch {}
+}
+
+function Field({ label, children }) {
+  return (
+    <label className="callback-form__field">
+      <span>{label}</span>
+      {children}
+    </label>
+  );
+}
+
+function Select({ name, options, required }) {
+  return (
+    <select name={name} required={required} defaultValue="">
+      <option value="" disabled>Select</option>
+      {options.map(o => <option key={o}>{o}</option>)}
+    </select>
+  );
+}
+
+export default function CallBackForm() {
+  const dialog = useRef(null);
+  const [status, setStatus] = useState('idle'); // idle | sending | error | done
+
+  useEffect(() => {
+    storeAttribution();
+    const onClick = e => {
+      if (!e.target.closest(OPEN_LINK)) return;
+      e.preventDefault();
+      dialog.current.showModal();
+    };
+    document.addEventListener('click', onClick);
+    return () => document.removeEventListener('click', onClick);
+  }, []);
+
+  const onSubmit = async e => {
+    e.preventDefault();
+    setStatus('sending');
+    const leadId = crypto.randomUUID();
+    try {
+      // text/plain keeps this a simple request, which Google Apps Script can accept from another site.
+      const res = await fetch(site.leadSheetUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({ ...Object.fromEntries(new FormData(e.target)), ...readAttribution(), lead_id: leadId }),
+      });
+      if (!res.ok || !(await res.json()).ok) throw new Error('Not saved');
+    } catch {
+      setStatus('error');
+      return;
+    }
+    setStatus('done');
+    window.fbq?.('track', 'Lead', { content_name: 'Conclave Call Back' }, { eventID: leadId });
+  };
+
+  return (
+    <dialog ref={dialog} className="callback-form" onClick={e => e.target === dialog.current && dialog.current.close()}>
+      <div className="callback-form__panel">
+        <button type="button" className="callback-form__close" aria-label="Close" onClick={() => dialog.current.close()}>&times;</button>
+        {status === 'done' ? (
+          <p className="callback-form__thanks" role="status">Thank you for filling the details. Our team will contact you soon.</p>
+        ) : (
+          <form onSubmit={onSubmit}>
+            <h2>Request A Call Back</h2>
+            <Field label="Name *"><input name="name" autoComplete="name" required /></Field>
+            <Field label="Phone *"><input name="phone" type="tel" autoComplete="tel" pattern="[0-9+()\s\-]{8,20}" title="Please enter a valid phone number" required /></Field>
+            <Field label="Email *"><input name="email" type="email" autoComplete="email" required /></Field>
+            <Field label="School name and city *"><input name="school" autoComplete="organization" required /></Field>
+            <div className="callback-form__row">
+              <Field label="Board *"><Select name="board" options={BOARDS} required /></Field>
+              <Field label="State *"><input name="state" autoComplete="address-level1" required /></Field>
+            </div>
+            <Field label="Your role *"><Select name="role" options={ROLES} required /></Field>
+            <Field label="Preferred time for the call"><Select name="call_time" options={CALL_TIMES} /></Field>
+            {status === 'error' && <p className="callback-form__error" role="alert">Sorry, we couldn&rsquo;t save your details. Please try again, or call us on +91 80411 24132.</p>}
+            <button type="submit" className="callback-form__submit" disabled={status === 'sending'}>{status === 'sending' ? 'Submitting…' : 'Submit'}</button>
+          </form>
+        )}
+      </div>
+    </dialog>
+  );
+}

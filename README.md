@@ -10,11 +10,22 @@ It was originally a WordPress + Elementor site on Hostinger. This repo rebuilds 
 |---|---|
 | `/` | Home page |
 | `/welcome-to-kuppam` | Thank-you page after buying a seat (Razorpay) |
-| `/thank-you` | Thank-you page after requesting a call back (Zoho form) |
+| `/thank-you` | Old call-back thank-you page, used only by the previous Zoho form |
 
-Payments and call-back requests are handled by external services:
-- Razorpay: `https://rzp.io/rzp/ELC2026`
-- Zoho Forms: `https://zfrmz.in/Tcz7v0rVoMUDoBoxPyJg`
+Payments are handled by Razorpay: `https://rzp.io/rzp/ELC2026`
+
+## Call-back form
+
+Any link to `#request-call` opens the pop-up in `components/CallBackForm.jsx`. Each submission adds a row to a Google Sheet with the principal's details, plus `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`, `utm_id` and `fbclid` from the landing URL. The Meta `Lead` event fires only after the sheet confirms the save.
+
+To connect the sheet:
+
+1. Create a Google Sheet, then open **Extensions → Apps Script**.
+2. Replace the code with `scripts/google-sheet-webhook.gs` and save.
+3. Go to **Deploy → New deployment → Web app**. Set **Execute as** to yourself and **Who has access** to **Anyone**, then deploy and approve the permissions.
+4. Copy the web app URL (ending in `/exec`) into `data/site.json` → `leadSheetUrl`.
+
+The form shows an error instead of the thank-you message until this URL is set. If you change the script later, publish it with **Deploy → Manage deployments → Edit → New version**, which keeps the same URL. To get an Excel file, use **File → Download → Microsoft Excel (.xlsx)** in the sheet.
 
 ## Quick start
 
@@ -45,6 +56,7 @@ All content is in `data/`. Edit the file, save, and the dev server reloads.
 | Header menu links | `data/site.json` → `menu` |
 | Meta Pixel ID | `data/site.json` → `metaPixelId` |
 | Microsoft Clarity project ID | `data/site.json` → `clarityId` |
+| Google Sheet that receives call-back requests | `data/site.json` → `leadSheetUrl` (see "Call-back form") |
 | Any other text, price or link on a page | search for the text in `data/elementor/*.json` and edit it in place |
 
 Images and other media live in `public/wp-content/uploads/`, with the same paths they had on WordPress.
