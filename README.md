@@ -44,6 +44,7 @@ All content is in `data/`. Edit the file, save, and the dev server reloads.
 | Testimonials slider | `data/testimonials.json` |
 | Header menu links | `data/site.json` → `menu` |
 | Meta Pixel ID | `data/site.json` → `metaPixelId` |
+| Microsoft Clarity project ID | `data/site.json` → `clarityId` |
 | Any other text, price or link on a page | search for the text in `data/elementor/*.json` and edit it in place |
 
 Images and other media live in `public/wp-content/uploads/`, with the same paths they had on WordPress.

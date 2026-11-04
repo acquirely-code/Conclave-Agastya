@@ -1,4 +1,4 @@
-// <head> contents shared by every page: stylesheets in WordPress's load order, fonts, Meta Pixel.
+// <head> contents shared by every page: stylesheets in WordPress's load order, fonts, Meta Pixel, Microsoft Clarity.
 import site from '@/data/site.json';
 
 const WP = '/wp-content';
@@ -36,6 +36,12 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '${site.metaPixelId}');
 fbq('track', 'PageView');`;
 
+const CLARITY = `(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "${site.clarityId}");`;
+
 // `pageStyles`: Elementor post CSS for the documents on this page, then plugin CSS printed in the footer.
 export default function SiteHead({ pageStyles = [] }) {
   return (
@@ -48,6 +54,7 @@ export default function SiteHead({ pageStyles = [] }) {
       <link rel="stylesheet" href={GOOGLE_FONTS} />
       <link rel="stylesheet" href={`${WP}/custom.css`} />
       <script dangerouslySetInnerHTML={{ __html: PIXEL }} />
+      <script dangerouslySetInnerHTML={{ __html: CLARITY }} />
     </head>
   );
 }
