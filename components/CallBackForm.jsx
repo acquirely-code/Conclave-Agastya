@@ -23,6 +23,10 @@ function storeAttribution() {
   try { sessionStorage.setItem(STORED_PARAMS, JSON.stringify(Object.fromEntries(found))); } catch {}
 }
 
+// The form shows +91 itself, so remove any country code or leading 0 that was pasted or autofilled.
+const phoneDigits = value => value.replace(/\D/g, '').replace(/^(91|0)(?=\d{10}$)/, '');
+const PHONE_ERROR = 'Please fill the correct 10-digit phone number';
+
 function Field({ label, children }) {
   return (
     <label className="callback-form__field">
@@ -62,10 +66,11 @@ export default function CallBackForm() {
     const leadId = crypto.randomUUID();
     try {
       // text/plain keeps this a simple request, which Google Apps Script can accept from another site.
+      const fields = Object.fromEntries(new FormData(e.target));
       const res = await fetch(site.leadSheetUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-        body: JSON.stringify({ ...Object.fromEntries(new FormData(e.target)), ...readAttribution(), lead_id: leadId }),
+        body: JSON.stringify({ ...fields, phone: `+91${fields.phone}`, ...readAttribution(), lead_id: leadId }),
       });
       if (!res.ok || !(await res.json()).ok) throw new Error('Not saved');
     } catch {
@@ -86,7 +91,12 @@ export default function CallBackForm() {
           <form onSubmit={onSubmit}>
             <h2>Request A Call Back</h2>
             <Field label="Name *"><input name="name" autoComplete="name" required /></Field>
-            <Field label="Phone *"><input name="phone" type="tel" autoComplete="tel" pattern="[0-9+()\s\-]{8,20}" title="Please enter a valid phone number" required /></Field>
+            <Field label="Phone *">
+              <span className="callback-form__phone">
+                <span>+91</span>
+                <input name="phone" type="tel" inputMode="numeric" autoComplete="tel-national" placeholder="10-digit number" pattern="[0-9]{10}" required onInvalid={e => e.target.setCustomValidity(PHONE_ERROR)} onInput={e => { e.target.setCustomValidity(''); e.target.value = phoneDigits(e.target.value); }} />
+              </span>
+            </Field>
             <Field label="Email *"><input name="email" type="email" autoComplete="email" required /></Field>
             <Field label="School name and city *"><input name="school" autoComplete="organization" required /></Field>
             <div className="callback-form__row">
