@@ -17,3 +17,10 @@
     display: none !important;
 }
 
+
+/* Phones: no menu icon in the header */
+@media (max-width: 767px) {
+    .elementor-menu-toggle {
+        display: none !important;
+    }
+}

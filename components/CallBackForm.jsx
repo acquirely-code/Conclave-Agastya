@@ -45,6 +45,24 @@ function Select({ name, options, required }) {
   );
 }
 
+// Bottom bar on phones and tablets, hidden until the visitor scrolls down.
+export function CallBackSticky() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 100);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  return (
+    <div className={`callback-sticky${visible ? ' is-visible' : ''}`}>
+      <a href="#request-call">Request A Call Back</a>
+    </div>
+  );
+}
+
 export default function CallBackForm() {
   const dialog = useRef(null);
   const [status, setStatus] = useState('idle'); // idle | sending | error | done

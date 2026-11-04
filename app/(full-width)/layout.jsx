@@ -4,7 +4,7 @@ import '../announcement.css';
 import '../callback-form.css';
 import SiteHead, { PixelNoscript, siteIcons } from '@/components/SiteHead';
 import Frontend from '@/components/elementor/Frontend';
-import CallBackForm from '@/components/CallBackForm';
+import CallBackForm, { CallBackSticky } from '@/components/CallBackForm';
 
 export const metadata = { title: 'Agastya', icons: siteIcons };
 
@@ -20,7 +20,7 @@ export default function FullWidthLayout({ children }) {
         {children}
         <Frontend />
         <CallBackForm />
-        <div className="callback-sticky"><a href="#request-call">Request A Call Back</a></div>
+        <CallBackSticky />
       </body>
     </html>
   );
