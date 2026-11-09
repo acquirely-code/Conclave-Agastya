@@ -2007,73 +2007,10 @@
        },
        "elements": [
         {
-         "id": "4bb7910",
-         "elType": "widget",
-         "settings": {
-          "editor": "<p>₹20,000:</p>",
-          "typography_typography": "custom",
-          "typography_font_family": "Lato",
-          "typography_font_size": {
-           "unit": "px",
-           "size": 20,
-           "sizes": []
-          },
-          "typography_font_weight": "700",
-          "text_color": "#FFFFFF",
-          "_element_width": "auto",
-          "_element_custom_width": {
-           "unit": "%",
-           "size": 16,
-           "sizes": []
-          },
-          "_flex_align_self": "center",
-          "align": "center",
-          "_padding": {
-           "unit": "px",
-           "top": "20",
-           "right": "0",
-           "bottom": "0",
-           "left": "0",
-           "isLinked": false
-          },
-          "typography_text_decoration": "line-through",
-          "typography_font_size_mobile": {
-           "unit": "px",
-           "size": 14,
-           "sizes": []
-          },
-          "_margin_mobile": {
-           "unit": "px",
-           "top": "9",
-           "right": "0",
-           "bottom": "0",
-           "left": "0",
-           "isLinked": false
-          },
-          "_padding_mobile": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "0",
-           "isLinked": false
-          },
-          "align_mobile": "start",
-          "_element_width_mobile": "initial",
-          "_element_custom_width_mobile": {
-           "unit": "px",
-           "size": 58,
-           "sizes": []
-          }
-         },
-         "elements": [],
-         "widgetType": "text-editor"
-        },
-        {
          "id": "aa02b55",
          "elType": "widget",
          "settings": {
-          "editor": "<h4>16500 + GST</h4>",
+          "editor": "<h4>20000 + GST</h4>",
           "typography_typography": "custom",
           "typography_font_family": "Lato",
           "typography_font_size": {
@@ -2128,7 +2065,7 @@
          "id": "ef9cc00",
          "elType": "widget",
          "settings": {
-          "editor": "<p>Early bird extended (closing on 7th Nov)<br>Limited Seats</p>",
+          "editor": "<p>Standard ticket, now live<br>Limited Seats</p>",
           "typography_typography": "custom",
           "typography_font_family": "Lato",
           "typography_font_size": {
@@ -21706,45 +21643,10 @@
        },
        "elements": [
         {
-         "id": "51c83c6",
-         "elType": "widget",
-         "settings": {
-          "editor": "<p>₹20,000:</p>",
-          "typography_typography": "custom",
-          "typography_font_family": "Lato",
-          "typography_font_size": {
-           "unit": "px",
-           "size": 20,
-           "sizes": []
-          },
-          "typography_font_weight": "700",
-          "text_color": "#FF7D32",
-          "_element_width": "auto",
-          "_element_custom_width": {
-           "unit": "%",
-           "size": 16,
-           "sizes": []
-          },
-          "_flex_align_self": "center",
-          "align": "center",
-          "_padding": {
-           "unit": "px",
-           "top": "20",
-           "right": "0",
-           "bottom": "0",
-           "left": "0",
-           "isLinked": false
-          },
-          "typography_text_decoration": "line-through"
-         },
-         "elements": [],
-         "widgetType": "text-editor"
-        },
-        {
          "id": "c27f0eb",
          "elType": "widget",
          "settings": {
-          "editor": "<p>16500 + GST</p>",
+          "editor": "<p>20000 + GST</p>",
           "typography_typography": "custom",
           "typography_font_family": "Lato",
           "typography_font_size": {
@@ -21778,7 +21680,7 @@
          "id": "1df1c1b",
          "elType": "widget",
          "settings": {
-          "editor": "<p> Early Bird Price  (Limited Seats)</p>",
+          "editor": "<p> Standard Ticket  (Limited Seats)</p>",
           "typography_typography": "custom",
           "typography_font_family": "Lato",
           "typography_font_size": {
@@ -24929,6 +24831,188 @@
              "size": 0
             },
             "background_background": "classic",
+            "background_color": "#FFFFFF2B",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_color": "#E2E2E2",
+            "border_radius": {
+             "unit": "px",
+             "top": "16",
+             "right": "16",
+             "bottom": "16",
+             "left": "16",
+             "isLinked": true
+            }
+           },
+           "elements": [
+            {
+             "id": "014a1db",
+             "elType": "container",
+             "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_justify_content": "space-between",
+              "flex_align_items": "center",
+              "padding_mobile": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "0",
+               "left": "0",
+               "isLinked": true
+              }
+             },
+             "elements": [
+              {
+               "id": "eff11fb",
+               "elType": "widget",
+               "settings": {
+                "title": "Early bird extended (closed)",
+                "align": "start",
+                "typography_typography": "custom",
+                "typography_font_family": "Lato",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                },
+                "typography_font_weight": "600",
+                "typography_text_transform": "none",
+                "typography_line_height": {
+                 "unit": "px",
+                 "size": 30,
+                 "sizes": []
+                },
+                "typography_letter_spacing": {
+                 "unit": "px",
+                 "size": 1.5,
+                 "sizes": []
+                },
+                "title_color": "#45556C",
+                "_padding": {
+                 "unit": "px",
+                 "top": "0",
+                 "right": "0",
+                 "bottom": "0",
+                 "left": "0",
+                 "isLinked": true
+                },
+                "_flex_align_self": "flex-start"
+               },
+               "elements": [],
+               "widgetType": "heading"
+              }
+             ],
+             "isInner": true
+            },
+            {
+             "id": "0b34a19",
+             "elType": "container",
+             "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_justify_content": "space-between",
+              "flex_align_items": "center",
+              "padding_mobile": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "0",
+               "left": "0",
+               "isLinked": true
+              }
+             },
+             "elements": [
+              {
+               "id": "c9713e8",
+               "elType": "widget",
+               "settings": {
+                "selected_icon": {
+                 "value": "",
+                 "library": ""
+                },
+                "view": "stacked",
+                "shape": "rounded",
+                "title_text": "16500 + GST",
+                "description_text": "Seats 21 to 50",
+                "text_align": "start",
+                "primary_color": "#FFFFFF",
+                "secondary_color": "#FFFFFF",
+                "icon_size": {
+                 "unit": "px",
+                 "size": 40,
+                 "sizes": []
+                },
+                "icon_padding": {
+                 "unit": "px",
+                 "size": 10,
+                 "sizes": []
+                },
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Lato",
+                "title_typography_font_size": {
+                 "unit": "px",
+                 "size": 24,
+                 "sizes": []
+                },
+                "title_typography_font_size_mobile": {
+                 "unit": "px",
+                 "size": 22,
+                 "sizes": []
+                },
+                "title_typography_font_weight": "600",
+                "title_typography_text_transform": "uppercase",
+                "title_color": "#000000",
+                "hover_title_color": "#000000",
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Lato",
+                "description_typography_font_size": {
+                 "unit": "px",
+                 "size": 18,
+                 "sizes": []
+                },
+                "description_typography_font_weight": "400",
+                "description_color": "#474747",
+                "title_bottom_space": {
+                 "unit": "px",
+                 "size": 8,
+                 "sizes": []
+                },
+                "description_typography_font_size_mobile": {
+                 "unit": "px",
+                 "size": 14,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "widgetType": "icon-box"
+              }
+             ],
+             "isInner": true
+            }
+           ],
+           "isInner": true
+          },
+          {
+           "id": "39d03a1",
+           "elType": "container",
+           "settings": {
+            "content_width": "full",
+            "flex_gap": {
+             "column": "0",
+             "row": "0",
+             "isLinked": true,
+             "unit": "px",
+             "size": 0
+            },
+            "background_background": "classic",
             "background_color": "#FF7D322B",
             "border_border": "solid",
             "border_width": {
@@ -24959,7 +25043,7 @@
            },
            "elements": [
             {
-             "id": "014a1db",
+             "id": "5176a92",
              "elType": "container",
              "settings": {
               "content_width": "full",
@@ -24977,10 +25061,10 @@
              },
              "elements": [
               {
-               "id": "eff11fb",
+               "id": "1264f62",
                "elType": "widget",
                "settings": {
-                "title": "Early bird extended (closing on 7th Nov)",
+                "title": "Standard Ticket\n\n\n",
                 "align": "start",
                 "typography_typography": "custom",
                 "typography_font_family": "Lato",
@@ -24990,7 +25074,7 @@
                  "sizes": []
                 },
                 "typography_font_weight": "600",
-                "typography_text_transform": "none",
+                "typography_text_transform": "capitalize",
                 "typography_line_height": {
                  "unit": "px",
                  "size": 30,
@@ -25069,188 +25153,6 @@
              "isInner": true
             },
             {
-             "id": "0b34a19",
-             "elType": "container",
-             "settings": {
-              "content_width": "full",
-              "flex_direction": "row",
-              "flex_justify_content": "space-between",
-              "flex_align_items": "center",
-              "padding_mobile": {
-               "unit": "px",
-               "top": "0",
-               "right": "0",
-               "bottom": "0",
-               "left": "0",
-               "isLinked": true
-              }
-             },
-             "elements": [
-              {
-               "id": "c9713e8",
-               "elType": "widget",
-               "settings": {
-                "selected_icon": {
-                 "value": "",
-                 "library": ""
-                },
-                "view": "stacked",
-                "shape": "rounded",
-                "title_text": "16500 + GST",
-                "description_text": "Limited seats remaining",
-                "text_align": "start",
-                "primary_color": "#FFFFFF",
-                "secondary_color": "#FFFFFF",
-                "icon_size": {
-                 "unit": "px",
-                 "size": 40,
-                 "sizes": []
-                },
-                "icon_padding": {
-                 "unit": "px",
-                 "size": 10,
-                 "sizes": []
-                },
-                "title_typography_typography": "custom",
-                "title_typography_font_family": "Lato",
-                "title_typography_font_size": {
-                 "unit": "px",
-                 "size": 24,
-                 "sizes": []
-                },
-                "title_typography_font_size_mobile": {
-                 "unit": "px",
-                 "size": 22,
-                 "sizes": []
-                },
-                "title_typography_font_weight": "600",
-                "title_typography_text_transform": "uppercase",
-                "title_color": "#000000",
-                "hover_title_color": "#000000",
-                "description_typography_typography": "custom",
-                "description_typography_font_family": "Lato",
-                "description_typography_font_size": {
-                 "unit": "px",
-                 "size": 18,
-                 "sizes": []
-                },
-                "description_typography_font_weight": "400",
-                "description_color": "#474747",
-                "title_bottom_space": {
-                 "unit": "px",
-                 "size": 8,
-                 "sizes": []
-                },
-                "description_typography_font_size_mobile": {
-                 "unit": "px",
-                 "size": 14,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "widgetType": "icon-box"
-              }
-             ],
-             "isInner": true
-            }
-           ],
-           "isInner": true
-          },
-          {
-           "id": "39d03a1",
-           "elType": "container",
-           "settings": {
-            "content_width": "full",
-            "flex_gap": {
-             "column": "0",
-             "row": "0",
-             "isLinked": true,
-             "unit": "px",
-             "size": 0
-            },
-            "background_background": "classic",
-            "background_color": "#FFFFFF2B",
-            "border_border": "solid",
-            "border_width": {
-             "unit": "px",
-             "top": "1",
-             "right": "1",
-             "bottom": "1",
-             "left": "1",
-             "isLinked": true
-            },
-            "border_color": "#E2E2E2",
-            "border_radius": {
-             "unit": "px",
-             "top": "16",
-             "right": "16",
-             "bottom": "16",
-             "left": "16",
-             "isLinked": true
-            }
-           },
-           "elements": [
-            {
-             "id": "5176a92",
-             "elType": "container",
-             "settings": {
-              "content_width": "full",
-              "flex_direction": "row",
-              "flex_justify_content": "space-between",
-              "flex_align_items": "center",
-              "padding_mobile": {
-               "unit": "px",
-               "top": "0",
-               "right": "0",
-               "bottom": "0",
-               "left": "0",
-               "isLinked": true
-              }
-             },
-             "elements": [
-              {
-               "id": "1264f62",
-               "elType": "widget",
-               "settings": {
-                "title": "Standard Ticket\n\n\n",
-                "align": "start",
-                "typography_typography": "custom",
-                "typography_font_family": "Lato",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 15,
-                 "sizes": []
-                },
-                "typography_font_weight": "600",
-                "typography_text_transform": "capitalize",
-                "typography_line_height": {
-                 "unit": "px",
-                 "size": 30,
-                 "sizes": []
-                },
-                "typography_letter_spacing": {
-                 "unit": "px",
-                 "size": 1.5,
-                 "sizes": []
-                },
-                "title_color": "#45556C",
-                "_padding": {
-                 "unit": "px",
-                 "top": "0",
-                 "right": "0",
-                 "bottom": "0",
-                 "left": "0",
-                 "isLinked": true
-                },
-                "_flex_align_self": "flex-start"
-               },
-               "elements": [],
-               "widgetType": "heading"
-              }
-             ],
-             "isInner": true
-            },
-            {
              "id": "5339d61",
              "elType": "container",
              "settings": {
@@ -25279,7 +25181,7 @@
                 "view": "stacked",
                 "shape": "rounded",
                 "title_text": "20000 + GST",
-                "description_text": "The last of the 100",
+                "description_text": "Limited seats remaining",
                 "text_align": "start",
                 "primary_color": "#FFFFFF",
                 "secondary_color": "#FFFFFF",
