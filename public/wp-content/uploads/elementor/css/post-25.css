@@ -82,3 +82,5 @@ flex: 0 0 auto;}/* End custom CSS */
 .elementor-25 .elementor-element.elementor-element-e3fba12>.e-con{grid-column:3;}
 .elementor-25 .elementor-element.elementor-element-84c7b94>.e-con:first-child,.elementor-25 .elementor-element.elementor-element-7e939af>.e-con:first-child,.elementor-25 .elementor-element.elementor-element-e3fba12>.e-con:first-child{border-top:4px solid var(--e-global-color-bb1c291);border-radius:4px 4px 0 0;}
 .elementor-25 .elementor-element.elementor-element-8c21f30 .elementor-widget-heading:last-child{margin-top:auto;}}
+.elementor-25 .elementor-element.elementor-element-a10e5f1{margin:-22px 0 0 0;padding:0;font-family:"Lato", Sans-serif;font-size:16px;font-weight:600;color:#E4F61F;text-align:start;}.elementor-25 .elementor-element.elementor-element-a10e5f1 p{margin:0;line-height:1.4;}
+@media(max-width:767px){.elementor-25 .elementor-element.elementor-element-a10e5f1{margin-top:2px;}}

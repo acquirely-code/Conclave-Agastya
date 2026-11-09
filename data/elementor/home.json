@@ -2758,6 +2758,15 @@
         }
        ],
        "isInner": true
+      },
+      {
+       "id": "a10e5f1",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p><strong>Groups of 2 or more get a 10% waiver.</strong></p>"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
       }
      ],
      "isInner": true
