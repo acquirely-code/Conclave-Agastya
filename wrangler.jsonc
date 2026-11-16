@@ -2,7 +2,7 @@
   // Static site: `next build` writes plain files to out/ (output: 'export'),
   // which Cloudflare serves as static assets. No OpenNext / Worker code needed.
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "agastya-conclave",
+  "name": "conclave-agastya",
   "compatibility_date": "2026-11-01",
   "assets": {
     "directory": "./out",
