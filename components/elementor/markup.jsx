@@ -181,7 +181,7 @@ export function VideoMarkup({ el }) {
   }
 
   const src = s.insert_url === 'yes' ? s.external_url?.url : s.hosted_url?.url;
-  const missing = /\/Dr-.*\.mp4$/.test(src || ''); // too large to deploy; served from Wistia once an ID is set
+  const missing = /\/(Dr-.*|AGASTYA-Video-comoressed)\.mp4$/.test(src || ''); // too large to deploy; served from Wistia once an ID is set
   const videoProps = {
     className: 'elementor-video',
     src: missing ? undefined : src,
