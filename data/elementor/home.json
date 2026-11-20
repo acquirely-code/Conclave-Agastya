@@ -12592,7 +12592,7 @@
                   },
                   "_element_custom_width_mobile": {
                    "unit": "%",
-                   "size": 48,
+                   "size": 100,
                    "sizes": []
                   },
                   "_mask_switch": "yes",
@@ -13174,7 +13174,7 @@
                   },
                   "_element_custom_width_mobile": {
                    "unit": "%",
-                   "size": 48,
+                   "size": 100,
                    "sizes": []
                   },
                   "_mask_switch": "yes",
@@ -13761,7 +13761,7 @@
                   },
                   "_element_custom_width_mobile": {
                    "unit": "%",
-                   "size": 48,
+                   "size": 100,
                    "sizes": []
                   },
                   "_mask_switch": "yes",
@@ -14347,7 +14347,7 @@
                   },
                   "_element_custom_width_mobile": {
                    "unit": "%",
-                   "size": 48,
+                   "size": 100,
                    "sizes": []
                   },
                   "_mask_switch": "yes",
@@ -15044,7 +15044,7 @@
                   },
                   "_element_custom_width_mobile": {
                    "unit": "%",
-                   "size": 48,
+                   "size": 100,
                    "sizes": []
                   },
                   "_mask_switch": "yes",
@@ -15624,7 +15624,7 @@
                   },
                   "_element_custom_width_mobile": {
                    "unit": "%",
-                   "size": 48,
+                   "size": 100,
                    "sizes": []
                   },
                   "_mask_switch": "yes",
@@ -16210,7 +16210,7 @@
                   },
                   "_element_custom_width_mobile": {
                    "unit": "%",
-                   "size": 48,
+                   "size": 100,
                    "sizes": []
                   },
                   "_mask_switch": "yes",
@@ -16919,7 +16919,7 @@
                   },
                   "_element_custom_width_mobile": {
                    "unit": "%",
-                   "size": 48,
+                   "size": 100,
                    "sizes": []
                   },
                   "_mask_switch": "yes",
@@ -17501,7 +17501,7 @@
                   },
                   "_element_custom_width_mobile": {
                    "unit": "%",
-                   "size": 48,
+                   "size": 100,
                    "sizes": []
                   },
                   "_mask_switch": "yes",
@@ -18087,7 +18087,7 @@
                   },
                   "_element_custom_width_mobile": {
                    "unit": "%",
-                   "size": 48,
+                   "size": 100,
                    "sizes": []
                   },
                   "_mask_switch": "yes",
@@ -18594,7 +18594,7 @@
                   },
                   "_element_custom_width_mobile": {
                    "unit": "%",
-                   "size": 48,
+                   "size": 100,
                    "sizes": []
                   },
                   "_mask_switch": "yes"
@@ -18921,7 +18921,7 @@
                   },
                   "_element_custom_width_mobile": {
                    "unit": "%",
-                   "size": 48,
+                   "size": 100,
                    "sizes": []
                   },
                   "_mask_switch": "yes"
@@ -19249,7 +19249,7 @@
                   },
                   "_element_custom_width_mobile": {
                    "unit": "%",
-                   "size": 48,
+                   "size": 100,
                    "sizes": []
                   },
                   "_mask_switch": "yes"
@@ -19583,7 +19583,7 @@
                     },
                     "_element_custom_width_mobile": {
                      "unit": "%",
-                     "size": 48,
+                     "size": 100,
                      "sizes": []
                     },
                     "_mask_switch": "yes"
@@ -19920,7 +19920,7 @@
               },
               "_element_custom_width_mobile": {
                "unit": "%",
-               "size": 48,
+               "size": 100,
                "sizes": []
               },
               "_mask_switch": "yes"
