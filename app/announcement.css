@@ -1,8 +1,12 @@
 /* Scrolling announcement strip (components/AnnouncementBar.jsx).
-   The hero section has margin-top:-150px to slide under the header, so the strip must stack above it. */
+   The hero section has margin-top:-150px to slide under the header, so the strip must stack above it.
+   It is sticky so the message stays on screen while scrolling. */
+/* Keep menu-link jumps (#Speakers etc.) from landing under the sticky strip */
+html { scroll-padding-top: 46px; }
 .announce-bar {
-  position: relative;
-  z-index: 10;
+  position: sticky;
+  top: 0;
+  z-index: 999;
   overflow: hidden;
   background: #062a38;
   color: #ffffff;

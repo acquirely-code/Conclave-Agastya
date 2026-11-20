@@ -2065,7 +2065,7 @@
          "id": "ef9cc00",
          "elType": "widget",
          "settings": {
-          "editor": "<p>Standard ticket, now live<br>Limited Seats</p>",
+          "editor": "<p>Limited Seats</p>",
           "typography_typography": "custom",
           "typography_font_family": "Lato",
           "typography_font_size": {
