@@ -4,18 +4,21 @@
   position: relative;
   z-index: 10;
   overflow: hidden;
-  background: #ff7d32;
+  background: #062a38;
   color: #ffffff;
+  border-bottom: 3px solid #ff7d32;
   font-family: "Lato", Sans-serif;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   line-height: 1;
-  padding: 11px 0;
+  padding: 13px 0;
   white-space: nowrap;
 }
 .announce-bar__track {
   display: inline-flex;
-  animation: announce-bar-scroll 60s linear infinite;
+  animation: announce-bar-scroll 40s linear infinite;
 }
 .announce-bar:hover .announce-bar__track {
   animation-play-state: paused;
@@ -25,6 +28,7 @@
 }
 .announce-bar__item::after {
   content: "\2022";
+  color: #ff7d32;
   padding-left: 48px;
 }
 @keyframes announce-bar-scroll {
@@ -32,8 +36,8 @@
   to { transform: translateX(-50%); }
 }
 @media (max-width: 767px) {
-  .announce-bar { font-size: 13px; padding: 9px 0; }
-  .announce-bar__track { animation-duration: 45s; }
+  .announce-bar { font-size: 14px; padding: 11px 0; }
+  .announce-bar__track { animation-duration: 30s; }
 }
 @media (prefers-reduced-motion: reduce) {
   .announce-bar { white-space: normal; text-align: center; padding: 10px 16px; line-height: 1.4; }
