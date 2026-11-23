@@ -58,6 +58,7 @@ export function CallBackSticky() {
 
   return (
     <div className={`callback-sticky${visible ? ' is-visible' : ''}`}>
+      <a href="https://rzp.io/rzp/ELC2026" className="callback-sticky__book">Book My Seat</a>
       <a href="#request-call">Request A Call Back</a>
     </div>
   );
