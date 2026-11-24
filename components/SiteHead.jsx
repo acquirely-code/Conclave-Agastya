@@ -28,11 +28,13 @@ export const STYLESHEETS = [
 // Fonts used across the Elementor kit, page CSS and plugins.
 const GOOGLE_FONTS = 'https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap';
 
+// autoConfig is off so Meta doesn't add its own SubscribedButtonClick events; it must be set before init.
 const PIXEL = `!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
 n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('set', 'autoConfig', false, '${site.metaPixelId}');
 fbq('init', '${site.metaPixelId}');
 fbq('track', 'PageView');`;
 
