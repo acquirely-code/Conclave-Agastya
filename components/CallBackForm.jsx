@@ -25,6 +25,9 @@ function storeAttribution() {
   try { sessionStorage.setItem(STORED_PARAMS, JSON.stringify(Object.fromEntries(found))); } catch {}
 }
 
+// Ad blockers can remove the pixel, so it may be missing.
+const track = (event, options) => window.fbq?.('track', event, { content_name: 'Conclave Call Back' }, options);
+
 // The form shows +91 itself, so remove any country code or leading 0 that was pasted or autofilled.
 const phoneDigits = value => value.replace(/\D/g, '').replace(/^(91|0)(?=\d{10}$)/, '');
 const PHONE_ERROR = 'Please fill the correct 10-digit phone number';
@@ -77,6 +80,7 @@ export default function CallBackForm() {
       if (!e.target.closest(OPEN_LINK)) return;
       e.preventDefault();
       dialog.current.showModal();
+      track('AddToCart');
     };
     document.addEventListener('click', onClick);
     return () => document.removeEventListener('click', onClick);
@@ -85,6 +89,7 @@ export default function CallBackForm() {
   const onSubmit = async e => {
     e.preventDefault();
     setStatus('sending');
+    track('InitiateCheckout');
     const leadId = crypto.randomUUID();
     const fields = Object.fromEntries(new FormData(e.target));
     const stateBoard = fields.board === STATE_BOARD;
@@ -103,7 +108,7 @@ export default function CallBackForm() {
     setIsStateBoard(stateBoard);
     setStatus('done');
     if (stateBoard) return;
-    window.fbq?.('track', 'Lead', { content_name: 'Conclave Call Back' }, { eventID: leadId });
+    track('Lead', { eventID: leadId });
   };
 
   return (

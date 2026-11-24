@@ -15,7 +15,7 @@ Payments are handled by Razorpay:
 
 ## Call-back form
 
-Any link to `#request-call` opens the pop-up in `components/CallBackForm.jsx`. Each submission adds a row to a Google Sheet with the principal's details, plus `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`, `utm_id` and `fbclid` from the landing URL. The Meta `Lead` event fires only after the sheet confirms the save, and never for State Board schools (they are still saved to the sheet).
+Any link to `#request-call` opens the pop-up in `components/CallBackForm.jsx`. Each submission adds a row to a Google Sheet with the principal's details, plus `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`, `utm_id` and `fbclid` from the landing URL. Meta events: `AddToCart` fires when a Request A Call Back button is clicked, and `InitiateCheckout` when the completed form is submitted. `Lead` fires only after the sheet confirms the save, and never for State Board schools (they are still saved to the sheet).
 
 To connect the sheet:
 
