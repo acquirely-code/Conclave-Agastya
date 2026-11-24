@@ -7,7 +7,9 @@ const OPEN_LINK = 'a[href="#request-call"]';
 const PARAMS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id', 'fbclid'];
 const STORED_PARAMS = 'conclave_attribution';
 
-const BOARDS = ['CBSE', 'IB', 'IGCSE', 'ICSE', 'State Board', 'Other'];
+// Schools on this board are saved to the sheet but not counted as a Meta Lead, and see a plain thank-you.
+const STATE_BOARD = 'State Board';
+const BOARDS = ['CBSE', 'IB', 'IGCSE', 'ICSE', STATE_BOARD, 'Other'];
 const ROLES = ['Founder / Owner', 'Principal / Head of School', 'Academic / Curriculum Head'];
 const CALL_TIMES = ['9am - 1pm', '1pm - 4pm', '4pm - 7pm'];
 
@@ -67,6 +69,7 @@ export function CallBackSticky() {
 export default function CallBackForm() {
   const dialog = useRef(null);
   const [status, setStatus] = useState('idle'); // idle | sending | error | done
+  const [isStateBoard, setIsStateBoard] = useState(false);
 
   useEffect(() => {
     storeAttribution();
@@ -83,9 +86,10 @@ export default function CallBackForm() {
     e.preventDefault();
     setStatus('sending');
     const leadId = crypto.randomUUID();
+    const fields = Object.fromEntries(new FormData(e.target));
+    const stateBoard = fields.board === STATE_BOARD;
     try {
       // text/plain keeps this a simple request, which Google Apps Script can accept from another site.
-      const fields = Object.fromEntries(new FormData(e.target));
       const res = await fetch(site.leadSheetUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'text/plain;charset=utf-8' },
@@ -96,7 +100,9 @@ export default function CallBackForm() {
       setStatus('error');
       return;
     }
+    setIsStateBoard(stateBoard);
     setStatus('done');
+    if (stateBoard) return;
     window.fbq?.('track', 'Lead', { content_name: 'Conclave Call Back' }, { eventID: leadId });
   };
 
@@ -110,8 +116,8 @@ export default function CallBackForm() {
               <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </span>
             <p className="callback-form__eyebrow">The Education Leaders Conclave 2026</p>
-            <h2>Thank you for filling the details.</h2>
-            <p>Our team will contact you soon.</p>
+            <h2>{isStateBoard ? 'Thank you for filling the form.' : 'Thank you for filling the details.'}</h2>
+            {!isStateBoard && <p>Our team will contact you soon.</p>}
             <button type="button" className="callback-form__submit" onClick={() => dialog.current.close()}>Done</button>
           </div>
         ) : (
